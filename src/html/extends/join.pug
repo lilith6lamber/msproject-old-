@@ -1,0 +1,52 @@
+- let title = "JOIN"
+doctype html
+html(lang='en')
+    include ../includes/head.pug
+    body
+        .form-container.wow.animate__animated.animate__fadeIn
+            form#joinform(method="", name="joinform", action="#")
+                .row
+                    .field
+                        label(for="new_name") First name
+                        input#new_name(type="text", name="firstname")
+                    .field
+                        label(for="new_lastname") Last name
+                        input#new_lastname(type="text", name="lastname")
+                .row
+                    .field
+                        label(for="new_city") City
+                        input#new_city(type="text", name="city")
+                    .field
+                        label(for="new_country") Country
+                        input#new_country(type="text", name="country")
+                .row
+                    .field
+                        label(for="new_address") Address
+                        input#new_address(type="text", name="address")
+                    .field
+                        label(for="new_address") ZIP
+                        input#new_zip(type="text", name="zip")
+                .row
+                    .field
+                        label(for="new_email") Email
+                        input#new_email(type="email", name="email")
+                    .field
+                        label(for="new_password") Password
+                        input#new_password(type="password", name="password")
+                .check_wrap
+                    .row
+                        input#subnews(type="checkbox", name="newsletter")
+                        label(for="subnews") Subscribe to our newsletter
+                    .row
+                        input#terms(type='checkbox', name="agree", checked)
+                        label(for='terms') I agree to the
+                        a(href='javascript:void(0)', target='_blank') terms
+                        label(for='terms') and would like to continue
+                .joinaction
+                    a(href="index.html")
+                        i.icon-arrow-left
+                        | Return
+                    button#sendform(type="button") Join now
+        script(src='js/jquery.min.js')
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js")
+        script(src="js/form.js")

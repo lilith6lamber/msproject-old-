@@ -1,0 +1,70 @@
+- let title = "ABOUT"
+doctype html
+html(lang='en')
+    include ../includes/head.pug
+    body
+        include ../includes/nav.pug
+        header.head-about
+            h1 About us
+        main
+            section.tracy.about
+                .content_wrap
+                    .tracy-img_wrap
+                        .imgborder
+                        picture
+                            source(type='image/webp', srcset='img/tracy.webp')
+                            source(type='image/jpeg', srcset='img/tracy.jpg')
+                            img(src='img/tracy.jpg', alt='tracy')
+                    .tracy-text
+                        h2 Tracy Reese
+                        .col_wrap
+                            .col
+                                p
+                                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam enim maxime et adipisci
+                                    | provident
+                                    | nostrum minima! Asperiores ab expedita commodi beatae consectetur vero dolorum dicta et
+                                    | facere
+                                    | vitae? Veritatis, qui!
+                                p
+                                    | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ullam adipisci commodi
+                                    | deserunt expedita repellendus consequuntur aperiam.
+                                p
+                                    | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi recusandae, quaerat nam
+                                    | consectetur maxime ex doloremque.
+                            .col
+                                p
+                                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dicta eaque natus
+                                    | ipsum,
+                                    | quo exercitationem qui officia possimus earum aliquam cupiditate nesciunt omnis et
+                                    | impedit
+                                    | nemo. At quos excepturi architecto?
+                                p
+                                    | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus officiis explicabo
+                                    | veritatis eaque voluptas magni saepe est aspernatur aut culpa id, doloremque laudantium
+                                    | alias consequuntur distinctio doloribus porro enim! Quis?
+            section.company.about
+                .company_wrap
+                    .cp-text
+                        h2 Company
+                        p
+                            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium consectetur necessitatibus
+                            | optio, alias voluptatem veritatis quod reiciendis placeat delectus beatae, recusandae harum enim
+                            | aliquid natus reprehenderit porro voluptatibus esse laborum?
+                        p
+                            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente ipsa, eos rem alias
+                            | nostrum modi adipisci architecto aut dicta.
+                        p
+                            | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorem nesciunt deleniti
+                            | consequatur accusantium.
+                    .cp-img
+                        picture
+                            source(type='image/webp', srcset='img/company.webp')
+                            source(type='image/jpeg', srcset='img/company.jpg')
+                            img(src='img/company.jpg', alt='tracy')
+            .newsletter_wrap
+                p.nl-text subscribe us for more lastest news
+                form(method='POST')
+                    input#newsletter(type='email', name='email', placeholder='Enter your email')
+                    button(type='button')
+                        i.icon-paper-plane
+        include ../includes/footer.pug

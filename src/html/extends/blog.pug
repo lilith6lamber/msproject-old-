@@ -1,0 +1,73 @@
+- let title = "BLOG"
+doctype html
+html(lang='en')
+    include ../includes/head.pug
+    body
+        include ../includes/nav.pug
+        header.head-blog
+            .mainblog-title
+                h1 Dropshipping.
+                p.subtitle How I’ve made $10k+ / mo with dropshipping.
+                a.btn-main-post(href='javascript:void(0)') Read more
+        main
+            .filter_wrap
+                p#filterby Filter by category 
+                    i.icon-arrow-down
+                ul#cat-check
+                    li
+                        input#lifestyle.radio(type='radio', value='lifestyle', name='cat')
+                        label(for='lifestyle') Lifestyle
+                    li
+                        input#fashion.radio(type='radio', value='fashion', name='cat')
+                        label(for='fashion') Fashion
+                    li
+                        input#news.radio(type='radio', value='news', name='cat')
+                        label(for='news') News
+                    li
+                        input#business.radio(type='radio', value='business', name='cat')
+                        label(for='business') How to sell online
+            #blogfeed.feed
+                ul#postslist
+            #instafeed.feed
+                a.ig-link(href='https://www.instagram.com/minstoreproject/', target='_blank') Instagram
+                .igprofile
+                    p Store
+                    a(href='https://www.instagram.com/minstoreproject/') @minstoreproject
+                ul#igposts
+                    li
+                        a(href='https://www.instagram.com/p/CCieDi1JF9x/', target='_blank')
+                            picture
+                                source(type='image/webp', srcset='img/ig1.webp')
+                                source(type='image/jpeg', srcset='img/ig1.jpg')
+                                img(src='img/ig1.jpg', alt='instagram post')
+                    li
+                        a(href='https://www.instagram.com/p/CCgV03RpKq0/', target='_blank')
+                            picture
+                                source(type='image/webp', srcset='img/ig2.webp')
+                                source(type='image/jpeg', srcset='img/ig2.jpg')
+                                img(src='img/ig2.jpg', alt='instagram post')
+                    li
+                        a(href='https://www.instagram.com/p/CCgPlwmJC5z/', target='_blank')
+                            picture
+                                source(type='image/webp', srcset='img/ig3.webp')
+                                source(type='image/jpeg', srcset='img/ig3.jpg')
+                                img(src='img/ig3.jpg', alt='instagram post')
+                    li
+                        a(href='https://www.instagram.com/p/CCgL9YGJgND/', target='_blank')
+                            picture
+                                source(type='image/webp', srcset='img/ig4.webp')
+                                source(type='image/jpeg', srcset='img/ig4.jpg')
+                                img(src='img/ig4.jpg', alt='instagram post')
+                    li
+                        a(href='https://www.instagram.com/p/CCgL5gXp_id/', target='_blank')
+                            picture
+                                source(type='image/webp', srcset='img/ig5.webp')
+                                source(type='image/jpeg', srcset='img/ig5.jpg')
+                                img(src='img/ig5.jpg', alt='instagram post')
+                    li
+                        a(href='https://www.instagram.com/p/CCgL2wrJBtS/', target='_blank')
+                            picture
+                                source(type='image/webp', srcset='img/ig6.webp')
+                                source(type='image/jpeg', srcset='img/ig6.jpg')
+                                img(src='img/ig6.jpg', alt='instagram post')
+        include ../includes/footer.pug

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>BLOG</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/bundle.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="manifest" href="favicon/site.webmanifest">
+		<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#00aba9">
+		<meta name="msapplication-config" content="favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+		<nav>
+			<div class="brandwrap">
+				<button class="hamburger hamburger--minus" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button><a class="brand" href="index.html">Store</a>
+			</div>
+			<div class="user-action">
+				<form method="POST">
+					<input id="searchfield" type="text" placeholder="Search" required="">
+				</form>
+				<div class="profile-action"><a id="loginlink" href="javascript:void(0)">Login</a> / <a id="joinlink" href="join.html">Join</a></div>
+				<div class="cart-display"><a href="javascript:void(0)"><i class="icon-cart"></i></a></div>
+				<ul id="submenu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="catalog.html">Catalog</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<header class="head-blog">
+			<div class="mainblog-title">
+				<h1>Dropshipping.</h1>
+				<p class="subtitle">How I’ve made $10k+ / mo with dropshipping.</p><a class="btn-main-post" href="javascript:void(0)">Read more</a>
+			</div>
+		</header>
+		<main>
+			<div class="filter_wrap">
+				<p id="filterby">Filter by category <i class="icon-arrow-down"></i></p>
+				<ul id="cat-check">
+					<li>
+						<input class="radio" id="lifestyle" type="radio" value="lifestyle" name="cat">
+						<label for="lifestyle">Lifestyle</label>
+					</li>
+					<li>
+						<input class="radio" id="fashion" type="radio" value="fashion" name="cat">
+						<label for="fashion">Fashion</label>
+					</li>
+					<li>
+						<input class="radio" id="news" type="radio" value="news" name="cat">
+						<label for="news">News</label>
+					</li>
+					<li>
+						<input class="radio" id="business" type="radio" value="business" name="cat">
+						<label for="business">How to sell online</label>
+					</li>
+				</ul>
+			</div>
+			<div class="feed" id="blogfeed">
+				<ul id="postslist"></ul>
+			</div>
+			<div class="feed" id="instafeed"><a class="ig-link" href="https://www.instagram.com/minstoreproject/" target="_blank">Instagram</a>
+				<div class="igprofile">
+					<p>Store</p><a href="https://www.instagram.com/minstoreproject/">@minstoreproject</a>
+				</div>
+				<ul id="igposts">
+					<li><a href="https://www.instagram.com/p/CCieDi1JF9x/" target="_blank">
+							<picture>
+								<source type="image/webp" srcset="img/ig1.webp">
+								<source type="image/jpeg" srcset="img/ig1.jpg"><img src="img/ig1.jpg" alt="instagram post">
+							</picture></a></li>
+					<li><a href="https://www.instagram.com/p/CCgV03RpKq0/" target="_blank">
+							<picture>
+								<source type="image/webp" srcset="img/ig2.webp">
+								<source type="image/jpeg" srcset="img/ig2.jpg"><img src="img/ig2.jpg" alt="instagram post">
+							</picture></a></li>
+					<li><a href="https://www.instagram.com/p/CCgPlwmJC5z/" target="_blank">
+							<picture>
+								<source type="image/webp" srcset="img/ig3.webp">
+								<source type="image/jpeg" srcset="img/ig3.jpg"><img src="img/ig3.jpg" alt="instagram post">
+							</picture></a></li>
+					<li><a href="https://www.instagram.com/p/CCgL9YGJgND/" target="_blank">
+							<picture>
+								<source type="image/webp" srcset="img/ig4.webp">
+								<source type="image/jpeg" srcset="img/ig4.jpg"><img src="img/ig4.jpg" alt="instagram post">
+							</picture></a></li>
+					<li><a href="https://www.instagram.com/p/CCgL5gXp_id/" target="_blank">
+							<picture>
+								<source type="image/webp" srcset="img/ig5.webp">
+								<source type="image/jpeg" srcset="img/ig5.jpg"><img src="img/ig5.jpg" alt="instagram post">
+							</picture></a></li>
+					<li><a href="https://www.instagram.com/p/CCgL2wrJBtS/" target="_blank">
+							<picture>
+								<source type="image/webp" srcset="img/ig6.webp">
+								<source type="image/jpeg" srcset="img/ig6.jpg"><img src="img/ig6.jpg" alt="instagram post">
+							</picture></a></li>
+				</ul>
+			</div>
+		</main>
+		<footer>
+			<div class="container">
+				<h2 class="brandname">Store</h2>
+				<div class="footernav">
+					<div class="account fooblock">
+						<h3 class="navsection">My Account</h3>
+						<ul class="navlist">
+							<li><a href="javascript:void(0)">How to buy</a></li>
+							<li><a href="javascript:void(0)">General Information</a></li>
+							<li><a href="javascript:void(0)">Payment</a></li>
+							<li><a href="javascript:void(0)">Shipping</a></li>
+							<li><a href="javascript:void(0)">Returns</a></li>
+							<li><a href="javascript:void(0)">Exchanges</a></li>
+							<li><a href="javascript:void(0)">Gift Card</a></li>
+							<li><a href="javascript:void(0)">Profile</a></li>
+						</ul>
+					</div>
+					<div class="account fooblock">
+						<h3 class="navsection">Company</h3>
+						<ul class="navlist">
+							<li><a href="javascript:void(0)">About us</a></li>
+							<li><a href="javascript:void(0)">Offices</a></li>
+							<li><a href="javascript:void(0)">Stores</a></li>
+							<li><a href="javascript:void(0)">Work with us</a></li>
+							<li><a href="javascript:void(0)">Contact</a></li>
+							<li><a href="javascript:void(0)">FAQ</a></li>
+						</ul>
+					</div>
+					<div class="account fooblock">
+						<h3 class="navsection">Policies</h3>
+						<ul class="navlist">
+							<li><a href="javascript:void(0)">Privacy</a></li>
+							<li><a href="javascript:void(0)">Terms</a></li>
+							<li><a href="javascript:void(0)">Shipping</a></li>
+							<li><a href="javascript:void(0)">Gift Card Conditions</a></li>
+						</ul>
+					</div>
+				</div>
+				<ul class="socials">
+					<li><a href="https://facebook.com" target="_blank"><i class="icon-facebook"></i></a></li>
+					<li><a href="https://twitter.com" target="_blank"><i class="icon-twitter"></i></a></li>
+					<li><a href="https://dribbble.com" target="_blank"><i class="icon-dribbble"></i></a></li>
+					<li><a href="https://linkedin.com" target="_blank"><i class="icon-linkedin"></i></a></li>
+				</ul>
+				<p class="copy">Copyright &copy; 2018 | Hogash.com</p>
+			</div>
+		</footer>
+		<button class="scroll_top" type="button"></button>
+		<button class="scroll_bottom" id="bottom" type="button"><a href="#bottom"></a></button>
+		<script src="js/jquery.min.js"></script>
+		<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+		<script src="js/all.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

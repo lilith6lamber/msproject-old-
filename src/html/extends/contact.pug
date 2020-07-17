@@ -1,0 +1,53 @@
+- let title = "CONTACT US"
+doctype html
+html(lang='en')
+    include ../includes/head.pug
+    body
+        include ../includes/nav.pug
+        header.head-ct
+            h1 Contact us
+            p.subtitle Looking Forward to Hearing From You.
+        main
+            .form_wrap
+                form(method='POST', action='')
+                    .label_wrap
+                        label(for='customer-name') Your name
+                        label(for='customer-mail') Your email
+                    .field_wrap
+                        input#customer-name(type='text')
+                        input#customer-mail(type='email', name='_replyto')
+                    label(for='subject') Subject
+                    input#subject(type='text')
+                    label(for='message') Message
+                    textarea#message(name='message', cols='30', rows='10')
+                    button(type='button') Submit
+                .contact_info
+                    h4.brand-ct Store
+                    ul.ct-list
+                        li
+                            i.icon-location
+                            p
+                                | 1857 Alford Rapid Apt. 109
+                        li
+                            i.icon-phone
+                            a(href='tel:+847245724') +(84) 7245 724
+                        li
+                            a(href='tel:+846585554') +(84) 6585 554
+                        li
+                            i.icon-email
+                            a.mail-link(href='mailto:zetta_considine@tomasa.ca') zetta_considine@tomasa.ca
+                    h4.ct-social Social networks
+                    ul.social-ct-list
+                        li
+                            a(href='https://facebook.com', target='_blank')
+                                i.icon-facebook
+                        li
+                            a(href='https://twitter.com', target='_blank')
+                                i.icon-twitter
+                        li
+                            a(href='https://instagram.com', target='_blank')
+                                i.icon-instagram
+                        li
+                            a(href='https://google.com', target='_blank')
+                                i.icon-google
+    include ../includes/footer.pug

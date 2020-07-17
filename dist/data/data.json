@@ -1,0 +1,340 @@
+{
+    "products": [
+        {
+            "itemname": "Voyageur Brooklyn Backpack",
+            "price": 395.00,
+            "qty": 10,
+            "img": "1",
+            "category": "accessories",
+            "color": "black"
+        },
+        {
+            "itemname": "Nike Air Max 270 React SP",
+            "price": 50.70,
+            "qty": 50,
+            "img": "2",
+            "category": "shoes",
+            "color": "black"
+        },
+        {
+            "itemname": "Loft Chair",
+            "price": 319.00,
+            "qty": 12,
+            "img": "3",
+            "category": "homedeco",
+            "color": "black"
+        },
+        {
+            "itemname": "Balck Nuba hat",
+            "price": 67.57,
+            "qty": 4,
+            "img": "4",
+            "category": "accessories",
+            "color": "black"
+        },
+        {
+            "itemname": "Ankle Boots",
+            "price": 509.00,
+            "qty": 2,
+            "img": "5",
+            "category": "shoes",
+            "color": "black"
+        },
+        {
+            "itemname": "Tripod Table Lamp",
+            "price": 35.00,
+            "qty": 18,
+            "img": "6",
+            "category": "homedeco",
+            "color": "black"
+        },
+        {
+            "itemname": "Silver Teardrop Earrings",
+            "price": 70.00,
+            "qty": 9,
+            "img": "7",
+            "category": "accessories",
+            "color": "silver"
+        },
+        {
+            "itemname": "Minimalist Mug",
+            "price": 10.00,
+            "qty": 7,
+            "img": "8",
+            "category": "homedeco",
+            "color": "white"
+        },
+        {
+            "itemname": "Round reading glasses",
+            "price": 40.00,
+            "qty": 23,
+            "img": "9",
+            "category": "accessories",
+            "color": "black"
+        },
+        {
+            "itemname": "Black Leather Jacket",
+            "price": 1750.80,
+            "qty": 3,
+            "img": "10",
+            "category": "apparel",
+            "color": "black"
+        },
+        {
+            "itemname": "Smart Ring",
+            "price": 170.00,
+            "qty": 32,
+            "img": "11",
+            "category": "accessories",
+            "color": "black"
+        },
+        {
+            "itemname": "Leather Tote Bag",
+            "price": 3195.00,
+            "qty": 1,
+            "img": "12",
+            "category": "accessories",
+            "color": "black"
+        },
+        {
+            "itemname": "Designer pots",
+            "price": 80.00,
+            "qty": 10,
+            "img": "13",
+            "category": "homedeco",
+            "color": "white"
+        },
+        {
+            "itemname": "Western Ankle Boots",
+            "price": 160.97,
+            "qty": 8,
+            "img": "14",
+            "category": "shoes",
+            "color": "black"
+        },
+        {
+            "itemname": "Basic V-neck T-shirt",
+            "price": 69.90,
+            "qty": 80,
+            "img": "15",
+            "category": "apparel",
+            "color": "black"
+        },
+        {
+            "itemname": "PU Leather Backpack",
+            "price": 49.99,
+            "qty": 106,
+            "img": "16",
+            "category": "accessories",
+            "color": "black"
+        },
+        {
+            "itemname": "Loft Armchair",
+            "price": 1454.00,
+            "qty": 2,
+            "img": "17",
+            "category": "homedeco",
+            "color": "black"
+        },
+        {
+            "itemname": "Leather Skate Shoes",
+            "price": 109.00,
+            "qty": 20,
+            "img": "18",
+            "category": "shoes",
+            "color": "black"
+        },
+        {
+            "itemname": "Wide waist belt",
+            "price": 13.50,
+            "qty": 87,
+            "img": "19",
+            "category": "accessories",
+            "color": "black"
+        },
+        {
+            "itemname": "Stretch Wide Band Corset",
+            "price": 60.00,
+            "qty": 12,
+            "img": "20",
+            "category": "accessories",
+            "color": "black"
+        }
+    ],
+    "stores": [
+        {
+            "city": "Oslo",
+            "address": "Lilleakerveien 16, 0283",
+            "location": "CC Vest",
+            "ophours": "Everyday: 9 AM — 5 PM",
+            "phone": "+4722736350",
+            "lat": 59.917583,
+            "lng": 10.635859
+        },
+        {
+            "city": "Copenhagen",
+            "address": "Vanløse Torv 1, 2720 Vanløse",
+            "location": "Kronen Vanløse",
+            "ophours": "Everyday: 8 AM — 8 PM",
+            "web": "https://kronenvanlose.dk/",
+            "lat": 55.687886,
+            "lng": 12.492603
+        },
+        {
+            "city": "Montréal",
+            "address": "2225 Boul Crémazie E, QC H1Z 4N4",
+            "location": "Canadian Tire",
+            "ophours": "Everyday: 9 AM — 7 PM",
+            "phone": "+15147291861",
+            "web": "https://www.canadiantire.ca/",
+            "lat": 45.557779,
+            "lng": -73.619778
+        },
+        {
+            "city": "New Jersey",
+            "address": "174 Passaic St, Garfield, NJ 07026",
+            "location": "Walmart Supercenter",
+            "ophours": "Everyday: 8 AM — 6 PM",
+            "phone": "+19733303550",
+            "web": "https://www.walmart.com/store/5752/garfield-nj/details/",
+            "lat": 40.867215,
+            "lng": -74.101090
+        },
+        {
+            "city": "Reykjavík",
+            "address": "Stórhöfði 25",
+            "location": "Eirberg ehf.",
+            "ophours": "Everyday: 9 AM — 6 PM",
+            "phone": "+3545693100",
+            "web": "https://eirberg.is/",
+            "lat": 64.126215,
+            "lng": -21.818014
+        },
+        {
+            "city": "Paris",
+            "address": "24 Rue de Sèvres, 75007",
+            "location": "Le Bon Marché",
+            "ophours": "Everyday: 11 AM — 7 PM",
+            "phone": "+33144398000",
+            "web": "https://www.24s.com/fr-fr/le-bon-marche/",
+            "lat": 48.851847,
+            "lng": 2.324016
+        },
+        {
+            "city": "Daly City",
+            "address": "1 Serramonte Center, CA 94015",
+            "location": "Macy's",
+            "ophours": "Everyday: 11 AM — 7 PM",
+            "phone": "+16509943333",
+            "web": "https://l.macys.com/daly-city-ca/",
+            "lat": 37.674951,
+            "lng": -122.470664
+        }
+    ],
+    "posts": [
+        {
+            "category": "business",
+            "img": "blog1",
+            "title": "Am I Ready to Sell My Ecommerce Business? Here's How to Find Out.",
+            "id": 1,
+            "author": "Megan Smith",
+            "date": "Jul 10, 2020"
+        },
+        {
+            "category": "lifestyle",
+            "img": "blog2",
+            "title": "Minimalism for beginners: All you need to know.",
+            "id": 2,
+            "author": "Lucy Brown",
+            "date": "May 11, 2020"
+        },
+        {
+            "category": "news",
+            "img": "blog12",
+            "title": "New Shipping Conditions During Quarantine: What do you have to know",
+            "id": 12,
+            "author": "John Doe",
+            "date": "Apr 21, 2020"
+        },
+        {
+            "category": "business",
+            "img": "blog3",
+            "title": "How to Get More Followers on Instagram: 13 Reliable Ways to Grow Your Audience",
+            "id": 3,
+            "author": "John Doe",
+            "date": "Feb 02, 2020"
+        },
+        {
+            "category": "fashion",
+            "img": "blog4",
+            "title": "Latest Trends from the Instagram influencers",
+            "id": 4,
+            "author": "John Doe",
+            "date": "Jan 15, 2020"
+        },
+        {
+            "category": "fashion",
+            "img": "blog5",
+            "title": "The Best Day-To-Night Accessories",
+            "id": 5,
+            "author": "Megan Smith",
+            "date": "Dec 21, 2019"
+        },
+        {
+            "category": "business",
+            "img": "blog6",
+            "title": "17 Best Places Ecommerce Entrepreneurs Go To Find Product Ideas",
+            "id": 6,
+            "author": "John Doe",
+            "date": "Dec 11, 2019"
+        },
+        {
+            "category": "lifestyle",
+            "img": "blog7",
+            "title": "6 Self-Care Steps To Manage Your Stress",
+            "id": 7,
+            "author": "Lucy Brown",
+            "date": "Nov 29, 2019"
+        },
+        {
+            "category": "lifestyle",
+            "img": "blog8",
+            "title": "8 Reasons To Run",
+            "id": 8,
+            "author": "Megan Smith",
+            "date": "Oct 10, 2019"
+        },
+        {
+            "category": "business",
+            "img": "blog9",
+            "title": "9 Ways to Write Product Descriptions that Sell",
+            "id": 9,
+            "author": "Lucy Brown",
+            "date": "Oct 04, 2019"
+        },
+        {
+            "category": "fashion",
+            "img": "blog10",
+            "title": "How to Style: Casual Suits",
+            "id": 10,
+            "author": "John Doe",
+            "date": "Aug 14, 2019"
+        },
+        {
+            "category": "news",
+            "img": "blog11",
+            "title": "Good news! STORE in Glasgow: Coming Soon",
+            "id": 11,
+            "author": "Lucy Brown",
+            "date": "May 28, 2019"
+        },
+        {
+            "category": "fashion",
+            "img": "blog13",
+            "title": "Capsule Wardrobe: 5 Must-Own Shoes Staples",
+            "id": 13,
+            "author": "Megan Smith",
+            "date": "Apr 11, 2019"
+        }
+    ]
+}

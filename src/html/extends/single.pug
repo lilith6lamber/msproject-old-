@@ -1,0 +1,68 @@
+- let title = "BLOG"
+doctype html
+html(lang='en')
+    include ../includes/head.pug
+    body
+        include ../includes/nav.pug
+        header#single-head
+            .overlay
+            h1#post-title
+        main
+            .post-action
+                .gen-info
+                    p
+                        | by 
+                        a#author(href='javascript:void(0)')
+                        |  - 
+                        span#date
+                        |  - 
+                        span.views
+                            i.icon-watched
+                            span#views
+                .share-links
+                    p.shareon Share on:
+                    ul#share
+                        li
+                            a(href='javascript:void(0)', target='_blank', title='Email')
+                                i.icon-email
+                        li
+                            a(href='javascript:void(0)', target='_blank', title='Pinterest')
+                                i.icon-pinterest
+                        li
+                            a(href='javascript:void(0)', target='_blank', title='Facebook')
+                                i.icon-facebook
+                        li
+                            a(href='javascript:void(0)', target='_blank', title='Twitter')
+                                i.icon-twitter
+                        li
+                            a(href='javascript:void(0)', target='_blank', title='LinkedIn')
+                                i.icon-linkedin
+            article#post-content
+                h2 Consequatur, minus sapiente.
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe sapiente eos perspiciatis accusamus autem error
+                    | nam vero accusantium blanditiis, repudiandae, vitae dicta at cum corporis deleniti similique expedita repellat
+                    | omnis!
+                p
+                    | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nihil cupiditate aperiam error! Commodi
+                    | architecto eaque harum expedita aperiam velit, nesciunt distinctio officiis perspiciatis quod optio nostrum
+                    | sapiente excepturi doloribus!
+                p
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis porro dolore optio a, similique, sapiente
+                    | provident eos asperiores reprehenderit et amet sed sunt. Voluptatum commodi nulla fuga ipsa consequuntur non?
+                h2 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe sapiente eos perspiciatis accusamus autem error
+                    | nam vero accusantium blanditiis, repudiandae, vitae dicta at cum corporis deleniti similique expedita repellat
+                    | omnis!
+                p
+                    | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nihil cupiditate aperiam error! Commodi
+                    | architecto eaque harum expedita aperiam velit, nesciunt distinctio officiis perspiciatis quod optio nostrum
+                    | sapiente excepturi doloribus!
+        include ../includes/footer.pug
+        script.
+            function load() {
+            let DATA = JSON.parse(localStorage.getItem('data'));
+            document.title = DATA.title;
+            }
+            window.onload = load;

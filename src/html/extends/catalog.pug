@@ -1,0 +1,55 @@
+- let title = "CATALOG"
+doctype html
+html(lang='en')
+    include ../includes/head.pug
+    body
+        include ../includes/nav.pug
+        header.catalog-slider-wrap
+            ul#saleslider
+                li.sale-item.webp
+                    .promo
+                        h2 50% sale
+                        p On all orders above $100 + free shipping.
+                        a.btnlearn(href="javascript:void(0)") Learn more
+                li.discount-item.webp
+                    .promo
+                        h2 Upgrade your discount
+                        p We will give you +5% for feedback on Instagram
+                        a.btnlearn(href="javascript:void(0)") Learn more
+                li.collection-item.webp
+                    .promo
+                        h2 Meet our new collection
+                        p Created in collaboration with Kaitlin Davis
+                        a.btnlearn(href="javascript:void(0)") Learn more
+            .salecontrols
+                a#sale_prev(href='javascript:void(0)')
+                a#sale_next(href='javascript:void(0)')
+        .content
+            main#catmain
+                .sortby
+                    p Sort:
+                    a(href="javascript:void(0)" id="low" class="sortlnk" data-value="low") lower price first
+                    a(href="javascript:void(0)" id="high" class="sortlnk" data-value="high") highest price first
+                .productslist_wrap
+                    ul#productslist
+            aside#filterblock
+                .filteropt
+                    h2 Filter by category
+                    ul#catlist
+                        li
+                            a.catitem(href="javascript:void(0)" data-value="apparel") Clothing
+                        li
+                            a.catitem(href="javascript:void(0)" data-value="shoes") Shoes
+                        li
+                            a.catitem(href="javascript:void(0)" data-value="accessories") Accessories
+                        li
+                            a.catitem(href="javascript:void(0)" data-value="homedeco") Daily Essentials
+                    h2 Filter by color
+                    ul#colorlist
+                        li
+                            a.colitem.black(href="javascript:void(0)" data-value="black" title="Black")
+                        li
+                            a.colitem.white(href="javascript:void(0)" data-value="white" title="White")
+                        li
+                            a.colitem.silver(href="javascript:void(0)" data-value="silver" title="Silver")                            
+        include ../includes/footer.pug

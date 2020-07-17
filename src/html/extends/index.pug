@@ -1,0 +1,139 @@
+- let title = "HOME"
+doctype html
+html(lang='en')
+    include ../includes/head.pug
+    body
+        include ../includes/nav.pug
+        .top-slider
+            ul#hotproducts.homeslider
+                li
+                    .hot-text
+                        p.hotitem-name Voyageur Brooklyn Backpack
+                        p.hotitem-price $395.00
+                        a.tocart(href='javascript:void(0)') Add to cart
+                    .hot-img
+                        picture
+                            source(type='image/webp', srcset='img/1.webp')
+                            source(type='image/jpeg', srcset='img/1.jpg')
+                            img(src='img/1.jpg', alt='Voyageur Brooklyn Backpack')
+                li
+                    .hot-text
+                        p.hotitem-name Nike Air Max 270 React SP
+                        p.hotitem-price $50.70
+                        a.tocart(href='javascript:void(0)') Add to cart
+                    .hot-img
+                        picture
+                            source(type='image/webp', srcset='img/2.webp')
+                            source(type='image/jpeg', srcset='img/2.jpg')
+                            img(src='img/2.jpg', alt='Nike Air Max 270 React SP')
+                li
+                    .hot-text
+                        p.hotitem-name Loft Chair
+                        p.hotitem-price $319.00
+                        a.tocart(href='javascript:void(0)') Add to cart
+                    .hot-img
+                        picture
+                            source(type='image/webp', srcset='img/3.webp')
+                            source(type='image/jpeg', srcset='img/3.jpg')
+                            img(src='img/3.jpg', alt='Loft Chair')
+            .hotcontrols
+                a#goprev(href='javascript:void(0)')
+                    i.icon-arrow-left
+                a#gonext(href='javascript:void(0)')
+                    i.icon-arrow-right
+        main.home-main
+            section.gallery
+                h2.lookhead Lookbook
+                #lookbook
+                    .big
+                        a(href='img/look3.jpg', data-lightbox='gallery')
+                            picture
+                                source(type='image/webp', srcset='img/look3pw.webp')
+                                source(type='image/jpeg', srcset='img/look3pw.jpg')
+                                img(src='img/look3pw.jpg', alt='lookbook')
+                    .sm1
+                        a(href='img/look1.jpg', data-lightbox='gallery')
+                            picture
+                                source(type='image/webp', srcset='img/look1pw.webp')
+                                source(type='image/jpeg', srcset='img/look1pw.jpg')
+                                img(src='img/look1pw.jpg', alt='lookbook')
+                    .sm2
+                        a(href='img/look6.jpg', data-lightbox='gallery')
+                            picture
+                                source(type='image/webp', srcset='img/look6pw.webp')
+                                source(type='image/jpeg', srcset='img/look6pw.jpg')
+                                img(src='img/look6pw.jpg', alt='lookbook')
+                    .sm3
+                        a(href='img/look7.jpg', data-lightbox='gallery')
+                            picture
+                                source(type='image/webp', srcset='img/look7pw.webp')
+                                source(type='image/jpeg', srcset='img/look7pw.jpg')
+                                img(src='img/look7pw.jpg', alt='lookbook')
+                    .sm4
+                        a(href='img/look5.jpg', data-lightbox='gallery')
+                            picture
+                                source(type='image/webp', srcset='img/look5pw.webp')
+                                source(type='image/jpeg', srcset='img/look5pw.jpg')
+                                img(src='img/look5pw.jpg', alt='lookbook')
+                    .md1
+                        a(href='img/look4.jpg', data-lightbox='gallery')
+                            picture
+                                source(type='image/webp', srcset='img/look4pw.webp')
+                                source(type='image/jpeg', srcset='img/look4pw.jpg')
+                                img(src='img/look4pw.jpg', alt='lookbook')
+                    .md2
+                        a(href='img/look2.jpg', data-lightbox='gallery')
+                            picture
+                                source(type='image/webp', srcset='img/look2pw.webp')
+                                source(type='image/jpeg', srcset='img/look2pw.jpg')
+                                img(src='img/look2pw.jpg', alt='lookbook')
+            section.newitems
+                h2 New collection
+                h3 Free shipping worldwide on all orders over $100.
+                ul#catalog
+                a#showmore(href='javascript:void(0)', onclick='showMore()') +
+            section.map
+                h2 Stores
+                .shop_slider
+                    ul#showrooms
+                        li.infocard
+                            .shopimg
+                                picture
+                                    source(type='image/webp', srcset='img/shopimg1.webp')
+                                    source(type='image/jpeg', srcset='img/shopimg1.jpg')
+                                    img(src='img/shopimg1.jpg', alt='shop')
+                            .shopinfo
+                                p.city Oslo
+                                p.address Lilleakerveien 16, 0283
+                                .hours
+                                    p 9 AM — 5 PM
+                                    p Seven days a week.
+                        li.infocard
+                            .shopimg
+                                picture
+                                    source(type='image/webp', srcset='img/shopimg2.webp')
+                                    source(type='image/jpeg', srcset='img/shopimg2.jpg')
+                                    img(src='img/shopimg2.jpg', alt='shop')
+                            .shopinfo
+                                p.city Copenhagen
+                                p.address Vanløse Torv 1, 2720 Vanløse
+                                .hours
+                                    p 8 AM — 8 PM
+                                    p Seven days a week.
+                        li.infocard
+                            .shopimg
+                                picture
+                                    source(type='image/webp', srcset='img/shopimg3.webp')
+                                    source(type='image/jpeg', srcset='img/shopimg3.jpg')
+                                    img(src='img/shopimg3.jpg', alt='shop')
+                            .shopinfo
+                                p.city Montréal
+                                p.address 2225 Boul Crémazie E, QC H1Z 4N4
+                                .hours
+                                    p 9 AM — 7 PM
+                                    p Seven days a week.
+                    .shopcontrols
+                        a#shop_prev(href='javascript:void(0)')
+                        a#shop_next(href='javascript:void(0)')
+                #map
+        include ../includes/footer.pug
