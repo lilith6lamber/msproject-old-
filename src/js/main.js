@@ -13,6 +13,7 @@ const sliderSettings = {
     pauseOnHover: true
 };
 
+
 $('.scroll_top').click(function () {
     $('html, body').animate({ scrollTop: 0 }, 1000);
 });
@@ -132,6 +133,17 @@ $(function () {
             .attr('placeholder', '');
     }).blur(function () {
         $(this).attr('placeholder', $(this).data('placeholder'));
+    });
+
+    $('#tabs').on('click', 'li:not(.active)', function () {
+        $(this)
+            .addClass('active').siblings().removeClass('active')
+            .closest('div.tabs_wrap').find('div.content_wrap').removeClass('current animate__animated animate__fadeIn').eq($(this).index()).addClass('current animate__animated animate__fadeIn');
+    });
+
+    $('#open-modal').click(function (e) {
+        e.preventDefault();
+        $('#loginlink').click();
     });
 
     lightbox.option({
@@ -284,7 +296,7 @@ function drawProdHTML(li = 'newitem', img, item, price) {
         </div>
         <div class="customer-action">
             <a href="javasript:void(0)" class="btnadd actbtn" data-price="${price}">Buy</a>
-            <a href="javasript:void(0)" class="btninfo actbtn">Details</a>
+            <a href="product.html" class="btninfo actbtn" data-item="${item}">Details</a>
         </div>
     </li>
     `;

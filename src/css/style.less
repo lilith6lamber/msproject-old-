@@ -14,6 +14,7 @@
 @acthover: #bd1a1a;
 @mail: #0060ff;
 @postinfo: #666666;
+@lightgray: #cccccc;
 
 @foonav: #999999;
 @foolist: #b2b2b2;
@@ -2231,5 +2232,101 @@ body.swal2-shown.swal2-height-auto {
             text-align: center;
             width: 100%;
         }
+    }
+}
+
+//SINGLE PRODUCT PAGE
+.tabs_wrap {
+    font-family: @ms;
+    .nav {
+        #tabs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            li {
+                text-transform: uppercase;
+                transition: @animated;
+                font-size: 11px;
+                font-weight: bold;
+                color: @lightgray;
+                margin: 0 25px;
+                letter-spacing: 1px;
+                cursor: pointer;
+                &.active, &:hover {
+                    color: @text;
+                }
+            }
+        }
+    }
+    .content_wrap {
+        display: none;
+        &.current {
+            display: flex;
+        }
+        .inner_wrap {
+            padding: 70px 180px 0;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            text-align: center;
+            word-break: break-word;
+            p:not(:last-of-type) {
+                padding-bottom: 30px;
+            }
+            .warning {
+                font-size: 12px;
+                color: @placeholder;
+                a {
+                    color: @text;
+                    &:hover, &:focus {
+                        color: @acthover;
+                    }
+                }
+            }
+            #reviews {
+                display: flex;
+                flex-direction: column;
+                li {
+                    flex-direction: row;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 30px 0;
+                    .user {
+                        width: 20%;
+                        margin-right: 30px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        img {
+                            display: block;
+                            object-fit: cover;
+                            width: 50px;
+                            margin-bottom: 5px;
+                            border-radius: 50%;
+                        }
+                        .username {
+                            font-weight: bold;
+                        }
+                    }
+                    .user-review {
+                        width: calc(80% - 30px);
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+aside#prod-related {
+    margin: 65px 50px 0;
+    padding: 80px 0;
+    text-align: center;
+    box-shadow: @shadow;
+    background-color: @white;
+    h2 {
+        font-size: 30px;
+        font-family: @prt;
+        font-weight: normal;
     }
 }

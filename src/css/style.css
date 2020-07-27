@@ -2123,3 +2123,97 @@ body.swal2-shown.swal2-height-auto {
     width: 100%;
   }
 }
+.tabs_wrap {
+  font-family: 'Montserrat';
+}
+.tabs_wrap .nav #tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tabs_wrap .nav #tabs li {
+  text-transform: uppercase;
+  transition: all, 0.2s ease;
+  font-size: 11px;
+  font-weight: bold;
+  color: #cccccc;
+  margin: 0 25px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.tabs_wrap .nav #tabs li.active,
+.tabs_wrap .nav #tabs li:hover {
+  color: #262626;
+}
+.tabs_wrap .content_wrap {
+  display: none;
+}
+.tabs_wrap .content_wrap.current {
+  display: flex;
+}
+.tabs_wrap .content_wrap .inner_wrap {
+  padding: 70px 180px 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  word-break: break-word;
+}
+.tabs_wrap .content_wrap .inner_wrap p:not(:last-of-type) {
+  padding-bottom: 30px;
+}
+.tabs_wrap .content_wrap .inner_wrap .warning {
+  font-size: 12px;
+  color: #7e7e7e;
+}
+.tabs_wrap .content_wrap .inner_wrap .warning a {
+  color: #262626;
+}
+.tabs_wrap .content_wrap .inner_wrap .warning a:hover,
+.tabs_wrap .content_wrap .inner_wrap .warning a:focus {
+  color: #bd1a1a;
+}
+.tabs_wrap .content_wrap .inner_wrap #reviews {
+  display: flex;
+  flex-direction: column;
+}
+.tabs_wrap .content_wrap .inner_wrap #reviews li {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+.tabs_wrap .content_wrap .inner_wrap #reviews li .user {
+  width: 20%;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tabs_wrap .content_wrap .inner_wrap #reviews li .user img {
+  display: block;
+  object-fit: cover;
+  width: 50px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+}
+.tabs_wrap .content_wrap .inner_wrap #reviews li .user .username {
+  font-weight: bold;
+}
+.tabs_wrap .content_wrap .inner_wrap #reviews li .user-review {
+  width: calc(80% - 30px);
+  text-align: left;
+}
+aside#prod-related {
+  margin: 65px 50px 0;
+  padding: 80px 0;
+  text-align: center;
+  box-shadow: 0px 0px 10px 5px rgba(161, 152, 161, 0.3);
+  background-color: #ffffff;
+}
+aside#prod-related h2 {
+  font-size: 30px;
+  font-family: 'Prata';
+  font-weight: normal;
+}

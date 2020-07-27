@@ -1,0 +1,87 @@
+- let title = "SHOP"
+doctype html
+html(lang='en')
+    include ../includes/head.pug
+    body
+        include ../includes/nav.pug
+        header#prod-card
+            .card-media
+
+            .card-info
+                .info_wrap
+                    p#itemname
+                    p.itemdesc Comfy yet stylish, the Luca Longline Cardigan from Atmos&Here is a trans-seasonal staple.
+                    .item-option
+                    
+        main#prod-desc
+            .tabs_wrap
+                .nav
+                    ul#tabs
+                        li.tab.active
+                            p Description
+                        li.tab
+                            p Additional information
+                        li.tab
+                            p Reviews
+                .content_wrap.current
+                    .inner_wrap
+                        p Distinctively create client-centered networks whereas technically sound customer service. Holisticly synergize enabled supply chains through timely innovation. Seamlessly disseminate flexible vortals without high-payoff innovation.
+                        p Continually harness reliable products after cross-platform scenarios. Authoritatively disintermediate economically sound e-business via granular e-commerce. Rapidiously embrace innovative results without process-centric interfaces. Globally architect economically sound bandwidth with installed base materials. Uniquely supply wireless niches through economically sound innovation.
+                .content_wrap
+                    .inner_wrap
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora animi aperiam omnis, nihil, nam dolorem excepturi iste consequatur veniam assumenda aut. Pariatur accusantium rerum culpa laudantium architecto quisquam, iusto maiores.
+                        p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis sapiente, deleniti perspiciatis impedit nesciunt beatae praesentium quod aliquam accusamus quasi atque. Obcaecati nemo tenetur necessitatibus dolorem qui quas aliquam quibusdam.
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora animi aperiam omnis, nihil, nam dolorem excepturi iste consequatur veniam assumenda aut. Pariatur accusantium rerum culpa laudantium architecto quisquam, iusto maiores.
+                        p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis sapiente, deleniti perspiciatis impedit nesciunt beatae praesentium quod aliquam accusamus quasi atque. Obcaecati nemo tenetur necessitatibus dolorem qui quas aliquam quibusdam.
+                .content_wrap
+                    .inner_wrap
+                        ul#reviews
+                            li.review_wrap
+                                .user
+                                    picture
+                                        source(type='image/webp', srcset='img/review1.webp')
+                                        source(type='image/jpeg', srcset='img/review1.jpg')
+                                        img(src='img/review1.jpg', alt='user')
+                                    p.username Mary J.
+                                .user-review
+                                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam minus, perspiciatis ad pariatur ipsam, id qui omnis nemo quam eligendi tempora nam praesentium error ipsa ab eos? Et, ab magni.
+                            li.review_wrap
+                                .user
+                                    picture
+                                        source(type='image/webp', srcset='img/review2.webp')
+                                        source(type='image/jpeg', srcset='img/review2.jpg')
+                                        img(src='img/review2.jpg', alt='user')
+                                    p.username Garry D.
+                                .user-review
+                                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam minus, perspiciatis ad pariatur ipsam, id qui omnis nemo quam eligendi tempora nam praesentium error ipsa ab eos? Et, ab magni.
+                            li.review_wrap
+                                .user
+                                    picture
+                                        source(type='image/webp', srcset='img/review3.webp')
+                                        source(type='image/jpeg', srcset='img/review3.jpg')
+                                        img(src='img/review3.jpg', alt='user')
+                                    p.username Hannah G.
+                                .user-review
+                                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam minus, perspiciatis ad pariatur ipsam, id qui omnis nemo quam eligendi tempora nam praesentium error ipsa ab eos? Et, ab magni.
+                            li.review_wrap
+                                .user
+                                    picture
+                                        source(type='image/webp', srcset='img/review4.webp')
+                                        source(type='image/jpeg', srcset='img/review4.jpg')
+                                        img(src='img/review4.jpg', alt='user')
+                                    p.username Mike B.
+                                .user-review
+                                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam minus, perspiciatis ad pariatur ipsam, id qui omnis nemo quam eligendi tempora nam praesentium error ipsa ab eos? Et, ab magni.
+                        p.warning
+                            | You have to 
+                            a#open-modal(href='javascript:void(0)') log in 
+                            |  to leave a review.
+        aside#prod-related
+            h2 Related Products
+        include ../includes/footer.pug
+        script.
+            function load() {
+            let DATA = JSON.parse(localStorage.getItem('item'));
+            document.title = DATA.title;
+            }
+            window.onload = load;
