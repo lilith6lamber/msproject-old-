@@ -77,6 +77,9 @@ $(function () {
         });
     });
 
+/*     $('return-lnk').click(function () {
+        window.history.back();
+    }); */
 
     $('input[name=cat]').click(function () {
         cat = $(this).val();
@@ -188,6 +191,8 @@ $(function () {
     drawPosts();
     drawMap();
 });
+
+
 function showMore() {
     let diff = totalItems - itemsToShow;
     itemsToShow += diff;
@@ -202,7 +207,7 @@ function drawCatalog() {
         url: "data/data.json",
         dataType: "json",
         success: function (json) {
-            let img, html = '', item, price;
+            let img, html = '', item, price, id;
             totalItems = json.products.length;
             let finded = $('body').find('.newitems');
             let liclass = 'newitem', newclass = 'newitem wow animate__animated animate__fadeIn';
@@ -211,10 +216,14 @@ function drawCatalog() {
                     img = json.products[i].img;
                     item = json.products[i].itemname;
                     price = json.products[i].price;
+                    id = json.products[i].itemID;
                     if (i > 12) {
                         liclass = newclass;
                     }
-                    html += drawProdHTML(liclass, img, item, price);
+                    html += drawProdHTML(liclass, img, item, price, id);
+                    if (id == localStorage.getItem('item')) {
+                        setProdData(id, img, item, price);
+                    }
                 }
                 $('#catalog').html(html);
                 $('#catalog').append('<li aria-hidden="true" class="hidden"></li>');
@@ -255,7 +264,8 @@ function drawCatalog() {
                         img = json.products[n].img;
                         item = json.products[n].itemname;
                         price = json.products[n].price;
-                        html += drawProdHTML(liclass, img, item, price);
+                        id = json.products[n].itemID;
+                        html += drawProdHTML(liclass, img, item, price, id);
                     }
                 }
                 else if (newArray.length != 0) {
@@ -263,7 +273,8 @@ function drawCatalog() {
                         img = newArray[a].img;
                         item = newArray[a].itemname;
                         price = newArray[a].price;
-                        html += drawProdHTML(newclass, img, item, price);
+                        id = newArray[a].itemID;
+                        html += drawProdHTML(newclass, img, item, price, id);
                     }
                 }
                 else if (filterArray.length != 0) {
@@ -271,7 +282,8 @@ function drawCatalog() {
                         img = filterArray[f].img;
                         item = filterArray[f].itemname;
                         price = filterArray[f].price;
-                        html += drawProdHTML(newclass, img, item, price);
+                        id = filterArray[f].itemID;
+                        html += drawProdHTML(newclass, img, item, price, id);
                     }
                 }
 
@@ -282,7 +294,7 @@ function drawCatalog() {
     });
 }
 
-function drawProdHTML(li = 'newitem', img, item, price) {
+function drawProdHTML(li = 'newitem', img, item, price, id) {
     let html = `
         <li class="${li}">
             <picture>
@@ -296,7 +308,7 @@ function drawProdHTML(li = 'newitem', img, item, price) {
         </div>
         <div class="customer-action">
             <a href="javasript:void(0)" class="btnadd actbtn" data-price="${price}">Buy</a>
-            <a href="product.html" class="btninfo actbtn" data-item="${item}">Details</a>
+            <a href="product.html" target="_blank" class="btninfo actbtn" data-id="${id}" onclick="setProdID($(this))">Details</a>
         </div>
     </li>
     `;
@@ -314,6 +326,22 @@ function sortProducts(arr) {
     arr.sort((a, b) => {
         return a - b
     })
+}
+
+let prodID;
+function setProdID ($lnk) {
+    prodID = $lnk.data("id");
+    localStorage.setItem('item', prodID)
+}
+function setProdData(id, img, item, price) {
+    if (id = localStorage.getItem('item')) {
+        let prodData = {
+            img: img,
+            item: item,
+            price: price
+        };
+        localStorage.setItem('itemData', JSON.stringify(prodData));
+    }
 }
 
 function drawMap() {
