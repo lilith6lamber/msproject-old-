@@ -13,6 +13,7 @@ const sliderSettings = {
     pauseOnHover: true
 };
 
+
 $('.scroll_top').click(function () {
     $('html, body').animate({ scrollTop: 0 }, 1000);
 });
@@ -50,6 +51,9 @@ let catVal;
 let color;
 let sort;
 let chosenCat = false, chosenCol = false;
+let qty = $('.qty').text();
+let qtynum = parseInt(qty);
+
 
 
 $(function () {
@@ -76,6 +80,43 @@ $(function () {
         });
     });
 
+    $('#imageGallery').lightSlider({
+        gallery:true,
+        item:1,
+        vertical:true,
+        loop: true,
+        enableDrag: false,
+        keyPress: true,
+        controls: false,
+        addClass: 'itemgallery',
+        //verticalHeight:295,
+        vThumbWidth:80,
+        thumbItem:4,
+        thumbMargin:5,
+        slideMargin:0
+    });
+
+    $('.itemgallery').css("padding", "0 0 0 180px");
+
+    $('.select').niceSelect();
+
+    $('.starrr').starrr({
+        rating: 4
+    });
+
+    $('.qtyplus').click(function () {
+        qtynum++;
+        $('.qty').text(qtynum);
+    });
+
+    $('.qtyminus').click(function () {
+        if (qtynum > 1) {
+            qtynum--;
+        } else {
+            qtynum = 1;
+        }
+        $('.qty').text(qtynum);
+    });
 
     $('input[name=cat]').click(function () {
         cat = $(this).val();
@@ -134,6 +175,17 @@ $(function () {
         $(this).attr('placeholder', $(this).data('placeholder'));
     });
 
+    $('#tabs').on('click', 'li:not(.active)', function () {
+        $(this)
+            .addClass('active').siblings().removeClass('active')
+            .closest('div.tabs_wrap').find('div.content_wrap').removeClass('current animate__animated animate__fadeIn').eq($(this).index()).addClass('current animate__animated animate__fadeIn');
+    });
+
+    $('#open-modal').click(function (e) {
+        e.preventDefault();
+        $('#loginlink').click();
+    });
+
     lightbox.option({
         wrapAround: true,
         albumLabel: '',
@@ -176,6 +228,7 @@ $(function () {
     drawPosts();
     drawMap();
 });
+
 function showMore() {
     let diff = totalItems - itemsToShow;
     itemsToShow += diff;
@@ -190,7 +243,7 @@ function drawCatalog() {
         url: "data/data.json",
         dataType: "json",
         success: function (json) {
-            let img, html = '', item, price;
+            let img, html = '', item, price, id;
             totalItems = json.products.length;
             let finded = $('body').find('.newitems');
             let liclass = 'newitem', newclass = 'newitem wow animate__animated animate__fadeIn';
@@ -199,10 +252,14 @@ function drawCatalog() {
                     img = json.products[i].img;
                     item = json.products[i].itemname;
                     price = json.products[i].price;
+                    id = json.products[i].itemID;
                     if (i > 12) {
                         liclass = newclass;
                     }
-                    html += drawProdHTML(liclass, img, item, price);
+                    if (id == localStorage.getItem('item')) {
+                        setProdData(id, img, item, price);
+                    }
+                    html += drawProdHTML(liclass, img, item, price, id);
                 }
                 $('#catalog').html(html);
                 $('#catalog').append('<li aria-hidden="true" class="hidden"></li>');
@@ -243,7 +300,8 @@ function drawCatalog() {
                         img = json.products[n].img;
                         item = json.products[n].itemname;
                         price = json.products[n].price;
-                        html += drawProdHTML(liclass, img, item, price);
+                        id = json.products[n].itemID;
+                        html += drawProdHTML(liclass, img, item, price, id);
                     }
                 }
                 else if (newArray.length != 0) {
@@ -251,7 +309,8 @@ function drawCatalog() {
                         img = newArray[a].img;
                         item = newArray[a].itemname;
                         price = newArray[a].price;
-                        html += drawProdHTML(newclass, img, item, price);
+                        id = newArray[a].itemID;
+                        html += drawProdHTML(newclass, img, item, price, id);
                     }
                 }
                 else if (filterArray.length != 0) {
@@ -259,7 +318,8 @@ function drawCatalog() {
                         img = filterArray[f].img;
                         item = filterArray[f].itemname;
                         price = filterArray[f].price;
-                        html += drawProdHTML(newclass, img, item, price);
+                        id = filterArray[f].itemID;
+                        html += drawProdHTML(newclass, img, item, price, id);
                     }
                 }
 
@@ -270,7 +330,7 @@ function drawCatalog() {
     });
 }
 
-function drawProdHTML(li = 'newitem', img, item, price) {
+function drawProdHTML(li = 'newitem', img, item, price, id) {
     let html = `
         <li class="${li}">
             <picture>
@@ -284,7 +344,7 @@ function drawProdHTML(li = 'newitem', img, item, price) {
         </div>
         <div class="customer-action">
             <a href="javasript:void(0)" class="btnadd actbtn" data-price="${price}">Buy</a>
-            <a href="javasript:void(0)" class="btninfo actbtn">Details</a>
+            <a href="product.html" target="_blank" class="btninfo actbtn" data-id="${id}" onclick="setProdID($(this))">Details</a>
         </div>
     </li>
     `;

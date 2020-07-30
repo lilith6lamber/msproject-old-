@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Item</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/bundle.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="manifest" href="favicon/site.webmanifest">
+		<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#00aba9">
+		<meta name="msapplication-config" content="favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+		<nav>
+			<div class="brandwrap">
+				<button class="hamburger hamburger--minus" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button><a class="brand" href="index.html">Store</a>
+			</div>
+			<div class="user-action">
+				<form method="POST">
+					<input id="searchfield" type="text" placeholder="Search" required="">
+				</form>
+				<div class="profile-action"><a id="loginlink" href="javascript:void(0)">Login</a> / <a id="joinlink" href="join.html">Join</a></div>
+				<div class="cart-display"><a href="checkout.html"><i class="icon-cart"></i></a><span id="cart-qty">1</span></div>
+				<ul id="submenu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="catalog.html">Catalog</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<header id="prod-card">
+			<div class="card-media">
+				<ul id="imageGallery">
+					<li data-thumb="img/related.jpg" data-src="img/related.jpg">
+						<picture>
+							<source type="image/webp" srcset="img/related.webp">
+							<source type="image/jpeg" srcset="img/related.jpg"><img src="img/related.jpg" alt="item">
+						</picture>
+					</li>
+					<li data-thumb="img/related.jpg" data-src="img/related.jpg">
+						<picture>
+							<source type="image/webp" srcset="img/related.webp">
+							<source type="image/jpeg" srcset="img/related.jpg"><img src="img/related.jpg" alt="item">
+						</picture>
+					</li>
+					<li data-thumb="img/related.jpg" data-src="img/related.jpg">
+						<picture>
+							<source type="image/webp" srcset="img/related.webp">
+							<source type="image/jpeg" srcset="img/related.jpg"><img src="img/related.jpg" alt="item">
+						</picture>
+					</li>
+				</ul>
+			</div>
+			<div class="card-info">
+				<div class="info_wrap">
+					<p id="itemname">Les Nouveaux Tops</p>
+					<p class="itemdesc">Comfy yet stylish, the Luca Longline Cardigan from Atmos&Here is a trans-seasonal staple.</p>
+					<div class="item-option">
+						<div class="row">
+							<div class="size-opt opt">
+								<p>Size</p>
+								<select class="select wide" id="size" name="size">
+									<option value="xs">XS</option>
+									<option value="s">S</option>
+									<option value="m">M</option>
+									<option value="l">L</option>
+								</select>
+							</div>
+							<div class="color-opt opt">
+								<p>Color</p>
+								<select class="select wide" id="color" name="color">
+									<option value="black">Black</option>
+									<option value="blue">Blue</option>
+									<option value="red">Red</option>
+									<option value="white">White</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="qty-add opt">
+								<p class="add">Qty</p>
+								<div class="qty_wrap"><a class="qtyminus el" href="javascript:void(0)">-</a><span class="qty el">1</span><a class="qtyplus el" href="javascript:void(0)">+</a></div>
+							</div>
+							<div class="rating-stars opt">
+								<div class="starrr"></div><a href="javascript:void(0)">3 ratings</a>
+							</div>
+						</div>
+					</div>
+					<p class="price__single">$49    </p>
+				</div>
+				<div class="action_wrap"> <a class="btnadd__single btnact" href="javascript:void(0)">Add to cart</a><a class="btnfav btnact" href="javascript:void(0)">Add to favorites        </a></div>
+			</div>
+		</header>
+		<main id="prod-desc">
+			<div class="tabs_wrap">
+				<div class="nav">
+					<ul id="tabs">
+						<li class="tab active">
+							<p>Description</p>
+						</li>
+						<li class="tab">
+							<p>Additional information</p>
+						</li>
+						<li class="tab">
+							<p>Reviews</p>
+						</li>
+					</ul>
+				</div>
+				<div class="content_wrap current">
+					<div class="inner_wrap">
+						<p>Distinctively create client-centered networks whereas technically sound customer service. Holisticly synergize enabled supply chains through timely innovation. Seamlessly disseminate flexible vortals without high-payoff innovation.</p>
+						<p>Continually harness reliable products after cross-platform scenarios. Authoritatively disintermediate economically sound e-business via granular e-commerce. Rapidiously embrace innovative results without process-centric interfaces. Globally architect economically sound bandwidth with installed base materials. Uniquely supply wireless niches through economically sound innovation.</p>
+					</div>
+				</div>
+				<div class="content_wrap">
+					<div class="inner_wrap">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora animi aperiam omnis, nihil, nam dolorem excepturi iste consequatur veniam assumenda aut. Pariatur accusantium rerum culpa laudantium architecto quisquam, iusto maiores.</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis sapiente, deleniti perspiciatis impedit nesciunt beatae praesentium quod aliquam accusamus quasi atque. Obcaecati nemo tenetur necessitatibus dolorem qui quas aliquam quibusdam.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora animi aperiam omnis, nihil, nam dolorem excepturi iste consequatur veniam assumenda aut. Pariatur accusantium rerum culpa laudantium architecto quisquam, iusto maiores.</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis sapiente, deleniti perspiciatis impedit nesciunt beatae praesentium quod aliquam accusamus quasi atque. Obcaecati nemo tenetur necessitatibus dolorem qui quas aliquam quibusdam.</p>
+					</div>
+				</div>
+				<div class="content_wrap">
+					<div class="inner_wrap">
+						<ul id="reviews">
+							<li class="review_wrap">
+								<div class="user">
+									<picture>
+										<source type="image/webp" srcset="img/review1.webp">
+										<source type="image/jpeg" srcset="img/review1.jpg"><img src="img/review1.jpg" alt="user">
+									</picture>
+									<p class="username">Mary J.</p>
+								</div>
+								<div class="user-review">
+									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam minus, perspiciatis ad pariatur ipsam, id qui omnis nemo quam eligendi tempora nam praesentium error ipsa ab eos? Et, ab magni.</p>
+								</div>
+							</li>
+							<li class="review_wrap">
+								<div class="user">
+									<picture>
+										<source type="image/webp" srcset="img/review2.webp">
+										<source type="image/jpeg" srcset="img/review2.jpg"><img src="img/review2.jpg" alt="user">
+									</picture>
+									<p class="username">Garry D.</p>
+								</div>
+								<div class="user-review">
+									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam minus, perspiciatis ad pariatur ipsam, id qui omnis nemo quam eligendi tempora nam praesentium error ipsa ab eos? Et, ab magni.</p>
+								</div>
+							</li>
+							<li class="review_wrap">
+								<div class="user">
+									<picture>
+										<source type="image/webp" srcset="img/review3.webp">
+										<source type="image/jpeg" srcset="img/review3.jpg"><img src="img/review3.jpg" alt="user">
+									</picture>
+									<p class="username">Hannah G.</p>
+								</div>
+								<div class="user-review">
+									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam minus, perspiciatis ad pariatur ipsam, id qui omnis nemo quam eligendi tempora nam praesentium error ipsa ab eos? Et, ab magni.</p>
+								</div>
+							</li>
+							<li class="review_wrap">
+								<div class="user">
+									<picture>
+										<source type="image/webp" srcset="img/review4.webp">
+										<source type="image/jpeg" srcset="img/review4.jpg"><img src="img/review4.jpg" alt="user">
+									</picture>
+									<p class="username">Mike B.</p>
+								</div>
+								<div class="user-review">
+									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam minus, perspiciatis ad pariatur ipsam, id qui omnis nemo quam eligendi tempora nam praesentium error ipsa ab eos? Et, ab magni.</p>
+								</div>
+							</li>
+						</ul>
+						<p class="warning">You have to <a id="open-modal" href="javascript:void(0)">log in </a> to leave a review.</p>
+					</div>
+				</div>
+			</div>
+		</main>
+		<aside id="prod-related">
+			<h2>Related Products</h2>
+			<div class="related_wrap">
+				<ul id="relproducts">
+					<li>
+						<picture>
+							<source type="image/webp" srcset="img/related.webp">
+							<source type="image/jpeg" srcset="img/related.jpg"><img src="img/related.jpg" alt="related item">
+						</picture>
+					</li>
+					<li>
+						<picture>
+							<source type="image/webp" srcset="img/related.webp">
+							<source type="image/jpeg" srcset="img/related.jpg"><img src="img/related.jpg" alt="related item">
+						</picture>
+					</li>
+					<li>
+						<picture>
+							<source type="image/webp" srcset="img/related.webp">
+							<source type="image/jpeg" srcset="img/related.jpg"><img src="img/related.jpg" alt="related item">
+						</picture>
+					</li>
+					<li>
+						<picture>
+							<source type="image/webp" srcset="img/related.webp">
+							<source type="image/jpeg" srcset="img/related.jpg"><img src="img/related.jpg" alt="related item">
+						</picture>
+					</li>
+				</ul>
+			</div>
+		</aside>
+		<footer>
+			<div class="container">
+				<h2 class="brandname">Store</h2>
+				<div class="footernav">
+					<div class="account fooblock">
+						<h3 class="navsection">My Account</h3>
+						<ul class="navlist">
+							<li><a href="javascript:void(0)">How to buy</a></li>
+							<li><a href="javascript:void(0)">General Information</a></li>
+							<li><a href="javascript:void(0)">Payment</a></li>
+							<li><a href="javascript:void(0)">Shipping</a></li>
+							<li><a href="javascript:void(0)">Returns</a></li>
+							<li><a href="javascript:void(0)">Exchanges</a></li>
+							<li><a href="javascript:void(0)">Gift Card</a></li>
+							<li><a href="javascript:void(0)">Profile</a></li>
+						</ul>
+					</div>
+					<div class="account fooblock">
+						<h3 class="navsection">Company</h3>
+						<ul class="navlist">
+							<li><a href="javascript:void(0)">About us</a></li>
+							<li><a href="javascript:void(0)">Offices</a></li>
+							<li><a href="javascript:void(0)">Stores</a></li>
+							<li><a href="javascript:void(0)">Work with us</a></li>
+							<li><a href="javascript:void(0)">Contact</a></li>
+							<li><a href="javascript:void(0)">FAQ</a></li>
+						</ul>
+					</div>
+					<div class="account fooblock">
+						<h3 class="navsection">Policies</h3>
+						<ul class="navlist">
+							<li><a href="javascript:void(0)">Privacy</a></li>
+							<li><a href="javascript:void(0)">Terms</a></li>
+							<li><a href="javascript:void(0)">Shipping</a></li>
+							<li><a href="javascript:void(0)">Gift Card Conditions</a></li>
+						</ul>
+					</div>
+				</div>
+				<ul class="socials">
+					<li><a href="https://facebook.com" target="_blank"><i class="icon-facebook"></i></a></li>
+					<li><a href="https://twitter.com" target="_blank"><i class="icon-twitter"></i></a></li>
+					<li><a href="https://dribbble.com" target="_blank"><i class="icon-dribbble"></i></a></li>
+					<li><a href="https://linkedin.com" target="_blank"><i class="icon-linkedin"></i></a></li>
+				</ul>
+				<p class="copy">Copyright &copy; 2018 | Hogash.com</p>
+			</div>
+		</footer>
+		<button class="scroll_top" type="button"></button>
+		<button class="scroll_bottom" id="bottom" type="button"><a href="#bottom"></a></button>
+		<script src="js/jquery.min.js"></script>
+		<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+		<script src="js/all.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
