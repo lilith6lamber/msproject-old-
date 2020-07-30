@@ -1,264 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>HOME</title>
-	<link rel="stylesheet" href="css/style.min.css">
-	<link rel="stylesheet" href="css/bundle.min.css">
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-	<link rel="manifest" href="favicon/site.webmanifest">
-	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href="favicon/favicon.ico">
-	<meta name="msapplication-TileColor" content="#00aba9">
-	<meta name="msapplication-config" content="favicon/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff">
-</head>
-
-<body>
-	<nav>
-		<div class="brandwrap">
-			<button class="hamburger hamburger--minus" type="button"><span class="hamburger-box"><span
-						class="hamburger-inner"></span></span></button><a class="brand" href="index.html">Store</a>
-		</div>
-		<div class="user-action">
-			<form method="POST">
-				<input id="searchfield" type="text" placeholder="Search" required="">
-			</form>
-			<div class="profile-action"><a id="loginlink" href="javascript:void(0)">Login</a> / <a id="joinlink"
-					href="join.html">Join</a></div>
-			<div class="cart-display"><a href="javascript:void(0)"><i class="icon-cart"></i></a></div>
-			<ul id="submenu">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="catalog.html">Catalog</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</div>
-	</nav>
-	<div class="top-slider">
-		<ul class="homeslider" id="hotproducts">
-			<li>
-				<div class="hot-text">
-					<p class="hotitem-name">Voyageur Brooklyn Backpack</p>
-					<p class="hotitem-price">$395.00</p><a class="tocart" href="javascript:void(0)">Add to cart</a>
-				</div>
-				<div class="hot-img">
-					<picture>
-						<source type="image/webp" srcset="img/1.webp">
-						<source type="image/jpeg" srcset="img/1.jpg"><img src="img/1.jpg"
-							alt="Voyageur Brooklyn Backpack">
-					</picture>
-				</div>
-			</li>
-			<li>
-				<div class="hot-text">
-					<p class="hotitem-name">Nike Air Max 270 React SP</p>
-					<p class="hotitem-price">$50.70</p><a class="tocart" href="javascript:void(0)">Add to cart</a>
-				</div>
-				<div class="hot-img">
-					<picture>
-						<source type="image/webp" srcset="img/2.webp">
-						<source type="image/jpeg" srcset="img/2.jpg"><img src="img/2.jpg"
-							alt="Nike Air Max 270 React SP">
-					</picture>
-				</div>
-			</li>
-			<li>
-				<div class="hot-text">
-					<p class="hotitem-name">Loft Chair</p>
-					<p class="hotitem-price">$319.00</p><a class="tocart" href="javascript:void(0)">Add to cart</a>
-				</div>
-				<div class="hot-img">
-					<picture>
-						<source type="image/webp" srcset="img/3.webp">
-						<source type="image/jpeg" srcset="img/3.jpg"><img src="img/3.jpg" alt="Loft Chair">
-					</picture>
-				</div>
-			</li>
-		</ul>
-		<div class="hotcontrols"><a id="goprev" href="javascript:void(0)"><i class="icon-arrow-left"></i></a><a
-				id="gonext" href="javascript:void(0)"><i class="icon-arrow-right"></i></a></div>
-	</div>
-	<main class="home-main">
-		<section class="gallery">
-			<h2 class="lookhead">Lookbook</h2>
-			<div id="lookbook">
-				<div class="big"><a href="img/look3.jpg" data-lightbox="gallery">
-						<picture>
-							<source type="image/webp" srcset="img/look3pw.webp">
-							<source type="image/jpeg" srcset="img/look3pw.jpg"><img src="img/look3pw.jpg"
-								alt="lookbook">
-						</picture>
-					</a></div>
-				<div class="sm1"><a href="img/look1.jpg" data-lightbox="gallery">
-						<picture>
-							<source type="image/webp" srcset="img/look1pw.webp">
-							<source type="image/jpeg" srcset="img/look1pw.jpg"><img src="img/look1pw.jpg"
-								alt="lookbook">
-						</picture>
-					</a></div>
-				<div class="sm2"><a href="img/look6.jpg" data-lightbox="gallery">
-						<picture>
-							<source type="image/webp" srcset="img/look6pw.webp">
-							<source type="image/jpeg" srcset="img/look6pw.jpg"><img src="img/look6pw.jpg"
-								alt="lookbook">
-						</picture>
-					</a></div>
-				<div class="sm3"><a href="img/look7.jpg" data-lightbox="gallery">
-						<picture>
-							<source type="image/webp" srcset="img/look7pw.webp">
-							<source type="image/jpeg" srcset="img/look7pw.jpg"><img src="img/look7pw.jpg"
-								alt="lookbook">
-						</picture>
-					</a></div>
-				<div class="sm4"><a href="img/look5.jpg" data-lightbox="gallery">
-						<picture>
-							<source type="image/webp" srcset="img/look5pw.webp">
-							<source type="image/jpeg" srcset="img/look5pw.jpg"><img src="img/look5pw.jpg"
-								alt="lookbook">
-						</picture>
-					</a></div>
-				<div class="md1"><a href="img/look4.jpg" data-lightbox="gallery">
-						<picture>
-							<source type="image/webp" srcset="img/look4pw.webp">
-							<source type="image/jpeg" srcset="img/look4pw.jpg"><img src="img/look4pw.jpg"
-								alt="lookbook">
-						</picture>
-					</a></div>
-				<div class="md2"><a href="img/look2.jpg" data-lightbox="gallery">
-						<picture>
-							<source type="image/webp" srcset="img/look2pw.webp">
-							<source type="image/jpeg" srcset="img/look2pw.jpg"><img src="img/look2pw.jpg"
-								alt="lookbook">
-						</picture>
-					</a></div>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>HOME</title>
+		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="stylesheet" href="css/bundle.min.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="manifest" href="favicon/site.webmanifest">
+		<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#00aba9">
+		<meta name="msapplication-config" content="favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+		<nav>
+			<div class="brandwrap">
+				<button class="hamburger hamburger--minus" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button><a class="brand" href="index.html">Store</a>
 			</div>
-		</section>
-		<section class="newitems">
-			<h2>New collection</h2>
-			<h3>Free shipping worldwide on all orders over $100.</h3>
-			<ul id="catalog"></ul><a id="showmore" href="javascript:void(0)" onclick="showMore()">+</a>
-		</section>
-		<section class="map">
-			<h2>Stores</h2>
-			<div class="shop_slider">
-				<ul id="showrooms">
-					<li class="infocard">
-						<div class="shopimg">
-							<picture>
-								<source type="image/webp" srcset="img/shopimg1.webp">
-								<source type="image/jpeg" srcset="img/shopimg1.jpg"><img src="img/shopimg1.jpg"
-									alt="shop">
-							</picture>
-						</div>
-						<div class="shopinfo">
-							<p class="city">Oslo</p>
-							<p class="address">Lilleakerveien 16, 0283</p>
-							<div class="hours">
-								<p>9 AM — 5 PM</p>
-								<p>Seven days a week.</p>
-							</div>
-						</div>
-					</li>
-					<li class="infocard">
-						<div class="shopimg">
-							<picture>
-								<source type="image/webp" srcset="img/shopimg2.webp">
-								<source type="image/jpeg" srcset="img/shopimg2.jpg"><img src="img/shopimg2.jpg"
-									alt="shop">
-							</picture>
-						</div>
-						<div class="shopinfo">
-							<p class="city">Copenhagen</p>
-							<p class="address">Vanløse Torv 1, 2720 Vanløse</p>
-							<div class="hours">
-								<p>8 AM — 8 PM</p>
-								<p>Seven days a week.</p>
-							</div>
-						</div>
-					</li>
-					<li class="infocard">
-						<div class="shopimg">
-							<picture>
-								<source type="image/webp" srcset="img/shopimg3.webp">
-								<source type="image/jpeg" srcset="img/shopimg3.jpg"><img src="img/shopimg3.jpg"
-									alt="shop">
-							</picture>
-						</div>
-						<div class="shopinfo">
-							<p class="city">Montréal</p>
-							<p class="address">2225 Boul Crémazie E, QC H1Z 4N4</p>
-							<div class="hours">
-								<p>9 AM — 7 PM</p>
-								<p>Seven days a week.</p>
-							</div>
-						</div>
-					</li>
+			<div class="user-action">
+				<form method="POST">
+					<input id="searchfield" type="text" placeholder="Search" required="">
+				</form>
+				<div class="profile-action"><a id="loginlink" href="javascript:void(0)">Login</a> / <a id="joinlink" href="join.html">Join</a></div>
+				<div class="cart-display"><a href="checkout.html"><i class="icon-cart"></i></a><span id="cart-qty">1</span></div>
+				<ul id="submenu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="catalog.html">Catalog</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
 				</ul>
-				<div class="shopcontrols"><a id="shop_prev" href="javascript:void(0)"></a><a id="shop_next"
-						href="javascript:void(0)"></a></div>
 			</div>
-			<div id="map"></div>
-		</section>
-	</main>
-	<footer>
-		<div class="container">
-			<h2 class="brandname">Store</h2>
-			<div class="footernav">
-				<div class="account fooblock">
-					<h3 class="navsection">My Account</h3>
-					<ul class="navlist">
-						<li><a href="javascript:void(0)">How to buy</a></li>
-						<li><a href="javascript:void(0)">General Information</a></li>
-						<li><a href="javascript:void(0)">Payment</a></li>
-						<li><a href="javascript:void(0)">Shipping</a></li>
-						<li><a href="javascript:void(0)">Returns</a></li>
-						<li><a href="javascript:void(0)">Exchanges</a></li>
-						<li><a href="javascript:void(0)">Gift Card</a></li>
-						<li><a href="javascript:void(0)">Profile</a></li>
-					</ul>
-				</div>
-				<div class="account fooblock">
-					<h3 class="navsection">Company</h3>
-					<ul class="navlist">
-						<li><a href="javascript:void(0)">About us</a></li>
-						<li><a href="javascript:void(0)">Offices</a></li>
-						<li><a href="javascript:void(0)">Stores</a></li>
-						<li><a href="javascript:void(0)">Work with us</a></li>
-						<li><a href="javascript:void(0)">Contact</a></li>
-						<li><a href="javascript:void(0)">FAQ</a></li>
-					</ul>
-				</div>
-				<div class="account fooblock">
-					<h3 class="navsection">Policies</h3>
-					<ul class="navlist">
-						<li><a href="javascript:void(0)">Privacy</a></li>
-						<li><a href="javascript:void(0)">Terms</a></li>
-						<li><a href="javascript:void(0)">Shipping</a></li>
-						<li><a href="javascript:void(0)">Gift Card Conditions</a></li>
-					</ul>
-				</div>
-			</div>
-			<ul class="socials">
-				<li><a href="https://facebook.com" target="_blank"><i class="icon-facebook"></i></a></li>
-				<li><a href="https://twitter.com" target="_blank"><i class="icon-twitter"></i></a></li>
-				<li><a href="https://dribbble.com" target="_blank"><i class="icon-dribbble"></i></a></li>
-				<li><a href="https://linkedin.com" target="_blank"><i class="icon-linkedin"></i></a></li>
+		</nav>
+		<div class="top-slider">
+			<ul class="homeslider" id="hotproducts">
+				<li>
+					<div class="hot-text">
+						<p class="hotitem-name">Voyageur Brooklyn Backpack</p>
+						<p class="hotitem-price">$395.00</p><a class="tocart" href="javascript:void(0)">Add to cart</a>
+					</div>
+					<div class="hot-img">
+						<picture>
+							<source type="image/webp" srcset="img/1.webp">
+							<source type="image/jpeg" srcset="img/1.jpg"><img src="img/1.jpg" alt="Voyageur Brooklyn Backpack">
+						</picture>
+					</div>
+				</li>
+				<li>
+					<div class="hot-text">
+						<p class="hotitem-name">Nike Air Max 270 React SP</p>
+						<p class="hotitem-price">$50.70</p><a class="tocart" href="javascript:void(0)">Add to cart</a>
+					</div>
+					<div class="hot-img">
+						<picture>
+							<source type="image/webp" srcset="img/2.webp">
+							<source type="image/jpeg" srcset="img/2.jpg"><img src="img/2.jpg" alt="Nike Air Max 270 React SP">
+						</picture>
+					</div>
+				</li>
+				<li>
+					<div class="hot-text">
+						<p class="hotitem-name">Loft Chair</p>
+						<p class="hotitem-price">$319.00</p><a class="tocart" href="javascript:void(0)">Add to cart</a>
+					</div>
+					<div class="hot-img">
+						<picture>
+							<source type="image/webp" srcset="img/3.webp">
+							<source type="image/jpeg" srcset="img/3.jpg"><img src="img/3.jpg" alt="Loft Chair">
+						</picture>
+					</div>
+				</li>
 			</ul>
-			<p class="copy">Copyright &copy; 2018 | Hogash.com</p>
+			<div class="hotcontrols"><a id="goprev" href="javascript:void(0)"><i class="icon-arrow-left"></i></a><a id="gonext" href="javascript:void(0)"><i class="icon-arrow-right"></i></a></div>
 		</div>
-	</footer>
-	<button class="scroll_top" type="button"></button>
-	<button class="scroll_bottom" id="bottom" type="button"><a href="#bottom"></a></button>
-	<script src="js/jquery.min.js"></script>
-	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
-	<script src="js/all.min.js"></script>
-	<script src="js/main.min.js"></script>
-</body>
-
+		<main class="home-main">
+			<section class="gallery">
+				<h2 class="lookhead">Lookbook</h2>
+				<div id="lookbook">
+					<div class="big"><a href="img/look3.jpg" data-lightbox="gallery">
+							<picture>
+								<source type="image/webp" srcset="img/look3pw.webp">
+								<source type="image/jpeg" srcset="img/look3pw.jpg"><img src="img/look3pw.jpg" alt="lookbook">
+							</picture></a></div>
+					<div class="sm1"><a href="img/look1.jpg" data-lightbox="gallery">
+							<picture>
+								<source type="image/webp" srcset="img/look1pw.webp">
+								<source type="image/jpeg" srcset="img/look1pw.jpg"><img src="img/look1pw.jpg" alt="lookbook">
+							</picture></a></div>
+					<div class="sm2"><a href="img/look6.jpg" data-lightbox="gallery">
+							<picture>
+								<source type="image/webp" srcset="img/look6pw.webp">
+								<source type="image/jpeg" srcset="img/look6pw.jpg"><img src="img/look6pw.jpg" alt="lookbook">
+							</picture></a></div>
+					<div class="sm3"><a href="img/look7.jpg" data-lightbox="gallery">
+							<picture>
+								<source type="image/webp" srcset="img/look7pw.webp">
+								<source type="image/jpeg" srcset="img/look7pw.jpg"><img src="img/look7pw.jpg" alt="lookbook">
+							</picture></a></div>
+					<div class="sm4"><a href="img/look5.jpg" data-lightbox="gallery">
+							<picture>
+								<source type="image/webp" srcset="img/look5pw.webp">
+								<source type="image/jpeg" srcset="img/look5pw.jpg"><img src="img/look5pw.jpg" alt="lookbook">
+							</picture></a></div>
+					<div class="md1"><a href="img/look4.jpg" data-lightbox="gallery">
+							<picture>
+								<source type="image/webp" srcset="img/look4pw.webp">
+								<source type="image/jpeg" srcset="img/look4pw.jpg"><img src="img/look4pw.jpg" alt="lookbook">
+							</picture></a></div>
+					<div class="md2"><a href="img/look2.jpg" data-lightbox="gallery">
+							<picture>
+								<source type="image/webp" srcset="img/look2pw.webp">
+								<source type="image/jpeg" srcset="img/look2pw.jpg"><img src="img/look2pw.jpg" alt="lookbook">
+							</picture></a></div>
+				</div>
+			</section>
+			<section class="newitems">
+				<h2>New collection</h2>
+				<h3>Free shipping worldwide on all orders over $100.</h3>
+				<ul id="catalog"></ul><a id="showmore" href="javascript:void(0)" onclick="showMore()">+</a>
+			</section>
+			<section class="map">
+				<h2>Stores</h2>
+				<div class="shop_slider">
+					<ul id="showrooms">
+						<li class="infocard">
+							<div class="shopimg">
+								<picture>
+									<source type="image/webp" srcset="img/shopimg1.webp">
+									<source type="image/jpeg" srcset="img/shopimg1.jpg"><img src="img/shopimg1.jpg" alt="shop">
+								</picture>
+							</div>
+							<div class="shopinfo">
+								<p class="city">Oslo</p>
+								<p class="address">Lilleakerveien 16, 0283</p>
+								<div class="hours">
+									<p>9 AM — 5 PM</p>
+									<p>Seven days a week.</p>
+								</div>
+							</div>
+						</li>
+						<li class="infocard">
+							<div class="shopimg">
+								<picture>
+									<source type="image/webp" srcset="img/shopimg2.webp">
+									<source type="image/jpeg" srcset="img/shopimg2.jpg"><img src="img/shopimg2.jpg" alt="shop">
+								</picture>
+							</div>
+							<div class="shopinfo">
+								<p class="city">Copenhagen</p>
+								<p class="address">Vanløse Torv 1, 2720 Vanløse</p>
+								<div class="hours">
+									<p>8 AM — 8 PM</p>
+									<p>Seven days a week.</p>
+								</div>
+							</div>
+						</li>
+						<li class="infocard">
+							<div class="shopimg">
+								<picture>
+									<source type="image/webp" srcset="img/shopimg3.webp">
+									<source type="image/jpeg" srcset="img/shopimg3.jpg"><img src="img/shopimg3.jpg" alt="shop">
+								</picture>
+							</div>
+							<div class="shopinfo">
+								<p class="city">Montréal</p>
+								<p class="address">2225 Boul Crémazie E, QC H1Z 4N4</p>
+								<div class="hours">
+									<p>9 AM — 7 PM</p>
+									<p>Seven days a week.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="shopcontrols"><a id="shop_prev" href="javascript:void(0)"></a><a id="shop_next" href="javascript:void(0)"></a></div>
+				</div>
+				<div id="map"></div>
+			</section>
+		</main>
+		<footer>
+			<div class="container">
+				<h2 class="brandname">Store</h2>
+				<div class="footernav">
+					<div class="account fooblock">
+						<h3 class="navsection">My Account</h3>
+						<ul class="navlist">
+							<li><a href="javascript:void(0)">How to buy</a></li>
+							<li><a href="javascript:void(0)">General Information</a></li>
+							<li><a href="javascript:void(0)">Payment</a></li>
+							<li><a href="javascript:void(0)">Shipping</a></li>
+							<li><a href="javascript:void(0)">Returns</a></li>
+							<li><a href="javascript:void(0)">Exchanges</a></li>
+							<li><a href="javascript:void(0)">Gift Card</a></li>
+							<li><a href="javascript:void(0)">Profile</a></li>
+						</ul>
+					</div>
+					<div class="account fooblock">
+						<h3 class="navsection">Company</h3>
+						<ul class="navlist">
+							<li><a href="javascript:void(0)">About us</a></li>
+							<li><a href="javascript:void(0)">Offices</a></li>
+							<li><a href="javascript:void(0)">Stores</a></li>
+							<li><a href="javascript:void(0)">Work with us</a></li>
+							<li><a href="javascript:void(0)">Contact</a></li>
+							<li><a href="javascript:void(0)">FAQ</a></li>
+						</ul>
+					</div>
+					<div class="account fooblock">
+						<h3 class="navsection">Policies</h3>
+						<ul class="navlist">
+							<li><a href="javascript:void(0)">Privacy</a></li>
+							<li><a href="javascript:void(0)">Terms</a></li>
+							<li><a href="javascript:void(0)">Shipping</a></li>
+							<li><a href="javascript:void(0)">Gift Card Conditions</a></li>
+						</ul>
+					</div>
+				</div>
+				<ul class="socials">
+					<li><a href="https://facebook.com" target="_blank"><i class="icon-facebook"></i></a></li>
+					<li><a href="https://twitter.com" target="_blank"><i class="icon-twitter"></i></a></li>
+					<li><a href="https://dribbble.com" target="_blank"><i class="icon-dribbble"></i></a></li>
+					<li><a href="https://linkedin.com" target="_blank"><i class="icon-linkedin"></i></a></li>
+				</ul>
+				<p class="copy">Copyright &copy; 2018 | Hogash.com</p>
+			</div>
+		</footer>
+		<button class="scroll_top" type="button"></button>
+		<button class="scroll_bottom" id="bottom" type="button"><a href="#bottom"></a></button>
+		<script src="js/jquery.min.js"></script>
+		<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+		<script src="js/all.min.js"></script>
+		<script src="js/main.min.js"></script>
+	</body>
 </html>

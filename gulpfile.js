@@ -34,7 +34,7 @@ gulp.task('cleanCSSBuild', () => {
 gulp.task('pug', function () {
     return gulp.src('src/html/extends/*.pug')
         .pipe(pug({ pretty: '\t' }))
-        .pipe(gulp.dest('src/'));
+        .pipe(gulp.dest(pathBuild));
 });
 
 gulp.task('js', function () {
@@ -79,8 +79,8 @@ gulp.task('server', (done) => {
 });
 
 gulp.task('default', gulp.series('pug', 'server'));
-/* 
 
-gulp.task('build', gulp.series(gulp.parallel('prefix', 'img_opt', 'scripts'), 'allcss', 'move'), function (done) {
+
+/* gulp.task('build', gulp.series(gulp.parallel('less', 'img_opt', 'scripts'), 'allcss', 'move'), function (done) {
     done();
-}); */
+});  */

@@ -6,7 +6,8 @@
             "qty": 10,
             "img": "1",
             "category": "accessories",
-            "color": "black"
+            "color": "black",
+            "itemID": 1
         },
         {
             "itemname": "Nike Air Max 270 React SP",
@@ -14,7 +15,8 @@
             "qty": 50,
             "img": "2",
             "category": "shoes",
-            "color": "black"
+            "color": "black",
+            "itemID": 2
         },
         {
             "itemname": "Loft Chair",
@@ -22,7 +24,8 @@
             "qty": 12,
             "img": "3",
             "category": "homedeco",
-            "color": "black"
+            "color": "black",
+            "itemID": 3
         },
         {
             "itemname": "Balck Nuba hat",
@@ -30,7 +33,8 @@
             "qty": 4,
             "img": "4",
             "category": "accessories",
-            "color": "black"
+            "color": "black",
+            "itemID": 4
         },
         {
             "itemname": "Ankle Boots",
@@ -38,7 +42,8 @@
             "qty": 2,
             "img": "5",
             "category": "shoes",
-            "color": "black"
+            "color": "black",
+            "itemID": 5
         },
         {
             "itemname": "Tripod Table Lamp",
@@ -46,7 +51,8 @@
             "qty": 18,
             "img": "6",
             "category": "homedeco",
-            "color": "black"
+            "color": "black",
+            "itemID": 6
         },
         {
             "itemname": "Silver Teardrop Earrings",
@@ -54,7 +60,8 @@
             "qty": 9,
             "img": "7",
             "category": "accessories",
-            "color": "silver"
+            "color": "silver",
+            "itemID": 7
         },
         {
             "itemname": "Minimalist Mug",
@@ -62,7 +69,8 @@
             "qty": 7,
             "img": "8",
             "category": "homedeco",
-            "color": "white"
+            "color": "white",
+            "itemID": 8
         },
         {
             "itemname": "Round reading glasses",
@@ -70,7 +78,8 @@
             "qty": 23,
             "img": "9",
             "category": "accessories",
-            "color": "black"
+            "color": "black",
+            "itemID": 9
         },
         {
             "itemname": "Black Leather Jacket",
@@ -78,7 +87,8 @@
             "qty": 3,
             "img": "10",
             "category": "apparel",
-            "color": "black"
+            "color": "black",
+            "itemID": 10
         },
         {
             "itemname": "Smart Ring",
@@ -86,7 +96,8 @@
             "qty": 32,
             "img": "11",
             "category": "accessories",
-            "color": "black"
+            "color": "black",
+            "itemID": 11
         },
         {
             "itemname": "Leather Tote Bag",
@@ -94,7 +105,8 @@
             "qty": 1,
             "img": "12",
             "category": "accessories",
-            "color": "black"
+            "color": "black",
+            "itemID": 12
         },
         {
             "itemname": "Designer pots",
@@ -102,7 +114,8 @@
             "qty": 10,
             "img": "13",
             "category": "homedeco",
-            "color": "white"
+            "color": "white",
+            "itemID": 13
         },
         {
             "itemname": "Western Ankle Boots",
@@ -110,7 +123,8 @@
             "qty": 8,
             "img": "14",
             "category": "shoes",
-            "color": "black"
+            "color": "black",
+            "itemID": 14
         },
         {
             "itemname": "Basic V-neck T-shirt",
@@ -118,7 +132,8 @@
             "qty": 80,
             "img": "15",
             "category": "apparel",
-            "color": "black"
+            "color": "black",
+            "itemID": 15
         },
         {
             "itemname": "PU Leather Backpack",
@@ -126,7 +141,8 @@
             "qty": 106,
             "img": "16",
             "category": "accessories",
-            "color": "black"
+            "color": "black",
+            "itemID": 16
         },
         {
             "itemname": "Loft Armchair",
@@ -134,7 +150,8 @@
             "qty": 2,
             "img": "17",
             "category": "homedeco",
-            "color": "black"
+            "color": "black",
+            "itemID": 17
         },
         {
             "itemname": "Leather Skate Shoes",
@@ -142,7 +159,8 @@
             "qty": 20,
             "img": "18",
             "category": "shoes",
-            "color": "black"
+            "color": "black",
+            "itemID": 18
         },
         {
             "itemname": "Wide waist belt",
@@ -150,7 +168,8 @@
             "qty": 87,
             "img": "19",
             "category": "accessories",
-            "color": "black"
+            "color": "black",
+            "itemID": 19
         },
         {
             "itemname": "Stretch Wide Band Corset",
@@ -158,7 +177,8 @@
             "qty": 12,
             "img": "20",
             "category": "accessories",
-            "color": "black"
+            "color": "black",
+            "itemID": 20
         }
     ],
     "stores": [
