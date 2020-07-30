@@ -1,85 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>JOIN</title>
-	<link rel="stylesheet" href="css/style.min.css">
-	<link rel="stylesheet" href="css/bundle.min.css">
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-	<link rel="manifest" href="favicon/site.webmanifest">
-	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href="favicon/favicon.ico">
-	<meta name="msapplication-TileColor" content="#00aba9">
-	<meta name="msapplication-config" content="favicon/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff">
-</head>
-
-<body>
-	<div class="form-container wow animate__animated animate__fadeIn">
-		<form id="joinform" method="" name="joinform" action="#">
-			<div class="row">
-				<div class="field">
-					<label for="new_name">First name</label>
-					<input id="new_name" type="text" name="firstname">
-				</div>
-				<div class="field">
-					<label for="new_lastname">Last name</label>
-					<input id="new_lastname" type="text" name="lastname">
-				</div>
-			</div>
-			<div class="row">
-				<div class="field">
-					<label for="new_city">City</label>
-					<input id="new_city" type="text" name="city">
-				</div>
-				<div class="field">
-					<label for="new_country">Country</label>
-					<input id="new_country" type="text" name="country">
-				</div>
-			</div>
-			<div class="row">
-				<div class="field">
-					<label for="new_address">Address</label>
-					<input id="new_address" type="text" name="address">
-				</div>
-				<div class="field">
-					<label for="new_address">ZIP</label>
-					<input id="new_zip" type="text" name="zip">
-				</div>
-			</div>
-			<div class="row">
-				<div class="field">
-					<label for="new_email">Email</label>
-					<input id="new_email" type="email" name="email">
-				</div>
-				<div class="field">
-					<label for="new_password">Password</label>
-					<input id="new_password" type="password" name="password">
-				</div>
-			</div>
-			<div class="check_wrap">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>JOIN</title>
+		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="stylesheet" href="css/bundle.min.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="manifest" href="favicon/site.webmanifest">
+		<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#00aba9">
+		<meta name="msapplication-config" content="favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+		<div class="form-container wow animate__animated animate__fadeIn">
+			<form id="joinform" method="" name="joinform" action="#">
 				<div class="row">
-					<input id="subnews" type="checkbox" name="newsletter">
-					<label for="subnews">Subscribe to our newsletter</label>
+					<div class="field">
+						<label for="new_name">First name</label>
+						<input id="new_name" type="text" name="firstname">
+					</div>
+					<div class="field">
+						<label for="new_lastname">Last name</label>
+						<input id="new_lastname" type="text" name="lastname">
+					</div>
 				</div>
 				<div class="row">
-					<input id="terms" type="checkbox" name="agree" checked>
-					<label for="terms">I agree to the</label><a href="javascript:void(0)" target="_blank">terms</a>
-					<label for="terms">and would like to continue</label>
+					<div class="field">
+						<label for="new_city">City</label>
+						<input id="new_city" type="text" name="city">
+					</div>
+					<div class="field">
+						<label for="new_country">Country</label>
+						<input id="new_country" type="text" name="country">
+					</div>
 				</div>
-			</div>
-			<div class="joinaction"><a href="index.html"><i class="icon-arrow-left"></i>Return</a>
-				<button id="sendform" type="button">Join now</button>
-			</div>
-		</form>
-	</div>
-	<script src="js/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
-	<script src="js/form.min.js"></script>
-</body>
-
+				<div class="row">
+					<div class="field">
+						<label for="new_address">Address</label>
+						<input id="new_address" type="text" name="address">
+					</div>
+					<div class="field">
+						<label for="new_address">ZIP</label>
+						<input id="new_zip" type="text" name="zip">
+					</div>
+				</div>
+				<div class="row">
+					<div class="field">
+						<label for="new_email">Email</label>
+						<input id="new_email" type="email" name="email">
+					</div>
+					<div class="field">
+						<label for="new_password">Password</label>
+						<input id="new_password" type="password" name="password">
+					</div>
+				</div>
+				<div class="check_wrap">
+					<div class="row">
+						<input id="subnews" type="checkbox" name="newsletter">
+						<label for="subnews">Subscribe to our newsletter</label>
+					</div>
+					<div class="row">
+						<input id="terms" type="checkbox" name="agree" checked>
+						<label for="terms">I agree to the</label><a href="javascript:void(0)" target="_blank">terms</a>
+						<label for="terms">and would like to continue</label>
+					</div>
+				</div>
+				<div class="joinaction"><a class="return-lnk" href="javascript:window.history.go(-1);"><i class="icon-arrow-left"></i>Return</a>
+					<button id="sendform" type="button">Join now</button>
+				</div>
+			</form>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+		<script src="js/form.min.js"></script>
+	</body>
 </html>
