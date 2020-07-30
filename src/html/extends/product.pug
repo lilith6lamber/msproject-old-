@@ -1,4 +1,4 @@
-- let title = "SHOP"
+- let title = "Item"
 doctype html
 html(lang='en')
     include ../includes/head.pug
@@ -6,13 +6,56 @@ html(lang='en')
         include ../includes/nav.pug
         header#prod-card
             .card-media
-
+                ul#imageGallery
+                    li(data-thumb="img/related.jpg", data-src="img/related.jpg")
+                        picture
+                            source(type='image/webp', srcset='img/related.webp')
+                            source(type='image/jpeg', srcset='img/related.jpg')
+                            img(src='img/related.jpg', alt='item')
+                    li(data-thumb="img/related.jpg", data-src="img/related.jpg")
+                        picture
+                            source(type='image/webp', srcset='img/related.webp')
+                            source(type='image/jpeg', srcset='img/related.jpg')
+                            img(src='img/related.jpg', alt='item')
+                    li(data-thumb="img/related.jpg", data-src="img/related.jpg")
+                        picture
+                            source(type='image/webp', srcset='img/related.webp')
+                            source(type='image/jpeg', srcset='img/related.jpg')
+                            img(src='img/related.jpg', alt='item')                            
             .card-info
                 .info_wrap
-                    p#itemname
+                    p#itemname Les Nouveaux Tops
                     p.itemdesc Comfy yet stylish, the Luca Longline Cardigan from Atmos&Here is a trans-seasonal staple.
                     .item-option
-                    
+                        .row
+                            .size-opt.opt
+                                p Size
+                                select#size.select.wide(name="size")
+                                    option(value="xs") XS
+                                    option(value="s") S
+                                    option(value="m") M
+                                    option(value="l") L
+                            .color-opt.opt
+                                p Color
+                                select#color.select.wide(name="color")
+                                    option(value="black") Black
+                                    option(value="blue") Blue
+                                    option(value="red") Red
+                                    option(value="white") White
+                        .row
+                            .qty-add.opt
+                                p.add Qty
+                                .qty_wrap
+                                    a.qtyminus.el(href="javascript:void(0)") -
+                                    span.qty.el 1
+                                    a.qtyplus.el(href="javascript:void(0)") +
+                            .rating-stars.opt
+                                .starrr
+                                a(href="javascript:void(0)") 3 ratings
+                    p.price__single $49    
+                .action_wrap 
+                    a.btnadd__single.btnact(href="javascript:void(0)") Add to cart
+                    a.btnfav.btnact(href="javascript:void(0)") Add to favorites        
         main#prod-desc
             .tabs_wrap
                 .nav
@@ -78,10 +121,26 @@ html(lang='en')
                             |  to leave a review.
         aside#prod-related
             h2 Related Products
+            .related_wrap
+                ul#relproducts
+                    li
+                        picture
+                            source(type='image/webp', srcset='img/related.webp')
+                            source(type='image/jpeg', srcset='img/related.jpg')
+                            img(src='img/related.jpg', alt='related item')
+                    li
+                        picture
+                            source(type='image/webp', srcset='img/related.webp')
+                            source(type='image/jpeg', srcset='img/related.jpg')
+                            img(src='img/related.jpg', alt='related item')
+                    li
+                        picture
+                            source(type='image/webp', srcset='img/related.webp')
+                            source(type='image/jpeg', srcset='img/related.jpg')
+                            img(src='img/related.jpg', alt='related item')
+                    li
+                        picture
+                            source(type='image/webp', srcset='img/related.webp')
+                            source(type='image/jpeg', srcset='img/related.jpg')
+                            img(src='img/related.jpg', alt='related item')                                                        
         include ../includes/footer.pug
-        script.
-            function load() {
-            let DATA = JSON.parse(localStorage.getItem('item'));
-            document.title = DATA.title;
-            }
-            window.onload = load;

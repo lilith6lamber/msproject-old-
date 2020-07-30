@@ -51,6 +51,9 @@ let catVal;
 let color;
 let sort;
 let chosenCat = false, chosenCol = false;
+let qty = $('.qty').text();
+let qtynum = parseInt(qty);
+
 
 
 $(function () {
@@ -77,9 +80,43 @@ $(function () {
         });
     });
 
-/*     $('return-lnk').click(function () {
-        window.history.back();
-    }); */
+    $('#imageGallery').lightSlider({
+        gallery:true,
+        item:1,
+        vertical:true,
+        loop: true,
+        enableDrag: false,
+        keyPress: true,
+        controls: false,
+        addClass: 'itemgallery',
+        //verticalHeight:295,
+        vThumbWidth:80,
+        thumbItem:4,
+        thumbMargin:5,
+        slideMargin:0
+    });
+
+    $('.itemgallery').css("padding", "0 0 0 180px");
+
+    $('.select').niceSelect();
+
+    $('.starrr').starrr({
+        rating: 4
+    });
+
+    $('.qtyplus').click(function () {
+        qtynum++;
+        $('.qty').text(qtynum);
+    });
+
+    $('.qtyminus').click(function () {
+        if (qtynum > 1) {
+            qtynum--;
+        } else {
+            qtynum = 1;
+        }
+        $('.qty').text(qtynum);
+    });
 
     $('input[name=cat]').click(function () {
         cat = $(this).val();
@@ -192,7 +229,6 @@ $(function () {
     drawMap();
 });
 
-
 function showMore() {
     let diff = totalItems - itemsToShow;
     itemsToShow += diff;
@@ -220,10 +256,10 @@ function drawCatalog() {
                     if (i > 12) {
                         liclass = newclass;
                     }
-                    html += drawProdHTML(liclass, img, item, price, id);
                     if (id == localStorage.getItem('item')) {
                         setProdData(id, img, item, price);
                     }
+                    html += drawProdHTML(liclass, img, item, price, id);
                 }
                 $('#catalog').html(html);
                 $('#catalog').append('<li aria-hidden="true" class="hidden"></li>');
@@ -326,22 +362,6 @@ function sortProducts(arr) {
     arr.sort((a, b) => {
         return a - b
     })
-}
-
-let prodID;
-function setProdID ($lnk) {
-    prodID = $lnk.data("id");
-    localStorage.setItem('item', prodID)
-}
-function setProdData(id, img, item, price) {
-    if (id = localStorage.getItem('item')) {
-        let prodData = {
-            img: img,
-            item: item,
-            price: price
-        };
-        localStorage.setItem('itemData', JSON.stringify(prodData));
-    }
 }
 
 function drawMap() {

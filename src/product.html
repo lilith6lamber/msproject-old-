@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>SHOP</title>
+		<title>Item</title>
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/bundle.css">
 		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -26,7 +26,7 @@
 					<input id="searchfield" type="text" placeholder="Search" required="">
 				</form>
 				<div class="profile-action"><a id="loginlink" href="javascript:void(0)">Login</a> / <a id="joinlink" href="join.html">Join</a></div>
-				<div class="cart-display"><a href="javascript:void(0)"><i class="icon-cart"></i></a></div>
+				<div class="cart-display"><a href="checkout.html"><i class="icon-cart"></i></a><span id="cart-qty">1</span></div>
 				<ul id="submenu">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
@@ -37,13 +37,66 @@
 			</div>
 		</nav>
 		<header id="prod-card">
-			<div class="card-media"></div>
+			<div class="card-media">
+				<ul id="imageGallery">
+					<li data-thumb="img/related.jpg" data-src="img/related.jpg">
+						<picture>
+							<source type="image/webp" srcset="img/related.webp">
+							<source type="image/jpeg" srcset="img/related.jpg"><img src="img/related.jpg" alt="item">
+						</picture>
+					</li>
+					<li data-thumb="img/related.jpg" data-src="img/related.jpg">
+						<picture>
+							<source type="image/webp" srcset="img/related.webp">
+							<source type="image/jpeg" srcset="img/related.jpg"><img src="img/related.jpg" alt="item">
+						</picture>
+					</li>
+					<li data-thumb="img/related.jpg" data-src="img/related.jpg">
+						<picture>
+							<source type="image/webp" srcset="img/related.webp">
+							<source type="image/jpeg" srcset="img/related.jpg"><img src="img/related.jpg" alt="item">
+						</picture>
+					</li>
+				</ul>
+			</div>
 			<div class="card-info">
 				<div class="info_wrap">
-					<p id="itemname"></p>
+					<p id="itemname">Les Nouveaux Tops</p>
 					<p class="itemdesc">Comfy yet stylish, the Luca Longline Cardigan from Atmos&Here is a trans-seasonal staple.</p>
-					<div class="item-option"></div>
+					<div class="item-option">
+						<div class="row">
+							<div class="size-opt opt">
+								<p>Size</p>
+								<select class="select wide" id="size" name="size">
+									<option value="xs">XS</option>
+									<option value="s">S</option>
+									<option value="m">M</option>
+									<option value="l">L</option>
+								</select>
+							</div>
+							<div class="color-opt opt">
+								<p>Color</p>
+								<select class="select wide" id="color" name="color">
+									<option value="black">Black</option>
+									<option value="blue">Blue</option>
+									<option value="red">Red</option>
+									<option value="white">White</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="qty-add opt">
+								<p class="add">Qty</p>
+								<div class="qty_wrap"><a class="qtyminus el" href="javascript:void(0)">-</a><span class="qty el">1</span><a class="qtyplus el" href="javascript:void(0)">+</a></div>
+							</div>
+							<div class="rating-stars opt">
+								<div class="starrr"></div><a href="javascript:void(0)">3 ratings</a>
+							</div>
+						</div>
+					</div>
+					<p class="price__single">$49    </p>
 				</div>
+				<div class="action_wrap"> <a class="btnadd__single btnact" href="javascript:void(0)">Add to cart</a><a class="btnfav btnact" href="javascript:void(0)">Add to favorites        </a></div>
 			</div>
 		</header>
 		<main id="prod-desc">
@@ -134,6 +187,34 @@
 		</main>
 		<aside id="prod-related">
 			<h2>Related Products</h2>
+			<div class="related_wrap">
+				<ul id="relproducts">
+					<li>
+						<picture>
+							<source type="image/webp" srcset="img/related.webp">
+							<source type="image/jpeg" srcset="img/related.jpg"><img src="img/related.jpg" alt="related item">
+						</picture>
+					</li>
+					<li>
+						<picture>
+							<source type="image/webp" srcset="img/related.webp">
+							<source type="image/jpeg" srcset="img/related.jpg"><img src="img/related.jpg" alt="related item">
+						</picture>
+					</li>
+					<li>
+						<picture>
+							<source type="image/webp" srcset="img/related.webp">
+							<source type="image/jpeg" srcset="img/related.jpg"><img src="img/related.jpg" alt="related item">
+						</picture>
+					</li>
+					<li>
+						<picture>
+							<source type="image/webp" srcset="img/related.webp">
+							<source type="image/jpeg" srcset="img/related.jpg"><img src="img/related.jpg" alt="related item">
+						</picture>
+					</li>
+				</ul>
+			</div>
 		</aside>
 		<footer>
 			<div class="container">
@@ -188,12 +269,5 @@
 		<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 		<script src="js/all.js"></script>
 		<script src="js/main.js"></script>
-		<script>
-			function load() {
-			let DATA = JSON.parse(localStorage.getItem('item'));
-			document.title = DATA.title;
-			}
-			window.onload = load;
-		</script>
 	</body>
 </html>

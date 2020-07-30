@@ -163,9 +163,24 @@ nav .user-action .profile-action a:hover {
 }
 nav .user-action .cart-display {
   font-size: 22px;
+  position: relative;
 }
 nav .user-action .cart-display a:hover {
   color: #bd1a1a;
+}
+nav .user-action .cart-display #cart-qty {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: red;
+  border-radius: 50%;
+  top: -25%;
+  left: 15px;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  line-height: 20px;
 }
 .hamburger {
   padding: 15px 15px;
@@ -2123,6 +2138,148 @@ body.swal2-shown.swal2-height-auto {
     width: 100%;
   }
 }
+#prod-card {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  max-height: 100%;
+}
+#prod-card .card-media,
+#prod-card .card-info {
+  width: 50%;
+}
+#prod-card .card-media {
+  padding: 170px 0 170px 130px;
+}
+#prod-card .card-media .lSSlideOuter.vertical .lSGallery {
+  left: 0;
+  padding-right: 0 !important;
+}
+#prod-card .card-media .lSSlideOuter.vertical .lSGallery li {
+  border-radius: 0;
+}
+#prod-card .card-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  border-left: 1px solid #f9f9f9;
+  padding: 120px 130px 170px;
+}
+#prod-card .card-info #itemname {
+  font-family: 'Prata';
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+#prod-card .card-info .itemdesc {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+}
+#prod-card .card-info .item-option {
+  font-size: 10px;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 60px 0 30px;
+}
+#prod-card .card-info .item-option .row {
+  display: flex;
+  height: 50%;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+#prod-card .card-info .item-option .row:first-of-type {
+  margin-bottom: 30px;
+}
+#prod-card .card-info .item-option .row .opt {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#prod-card .card-info .item-option .row .opt p {
+  margin-right: 60px;
+}
+#prod-card .card-info .item-option .row .opt:nth-last-of-type(even) {
+  margin-right: 60px;
+}
+#prod-card .card-info .item-option .row .opt.rating-stars {
+  flex-direction: column;
+}
+#prod-card .card-info .item-option .row .opt.rating-stars a {
+  color: #cccccc;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+}
+#prod-card .card-info .item-option .row .opt.rating-stars a:hover {
+  text-decoration: underline;
+}
+#prod-card .card-info .item-option .row .opt.rating-stars .starrr {
+  margin-bottom: 10px;
+}
+#prod-card .card-info .item-option .row .opt.rating-stars .starrr a {
+  font-size: 18px;
+  margin: 0 2px;
+}
+#prod-card .card-info .item-option .row .opt.rating-stars .starrr a.ico-star {
+  color: #ffdc51;
+}
+#prod-card .card-info .item-option .row .opt.rating-stars .starrr a.ico-star.clear {
+  color: #cccccc;
+}
+#prod-card .card-info .item-option .row .opt .qty_wrap {
+  display: flex;
+  width: 100%;
+  border: 1px solid #cccccc;
+}
+#prod-card .card-info .item-option .row .opt .qty_wrap .el {
+  width: calc(100% / 3);
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#prod-card .card-info .item-option .row .opt .qty_wrap .el:hover:not(.qty) {
+  background-color: #000000;
+  color: #ffffff;
+}
+#prod-card .card-info .item-option .row .opt .qty_wrap .el.qtyminus {
+  border-right: 1px solid #cccccc;
+}
+#prod-card .card-info .item-option .row .opt .qty_wrap .el.qtyplus {
+  border-left: 1px solid #cccccc;
+}
+#prod-card .card-info .action_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-top: 50px;
+}
+#prod-card .card-info .action_wrap .btnact {
+  font-size: 11px;
+  letter-spacing: 2px;
+  width: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #cccccc;
+  padding: 25px 0;
+}
+#prod-card .card-info .action_wrap .btnact.btnfav {
+  margin-left: 10px;
+}
+#prod-card .card-info .action_wrap .btnact:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
 .tabs_wrap {
   font-family: 'Montserrat';
 }
@@ -2216,4 +2373,18 @@ aside#prod-related h2 {
   font-size: 30px;
   font-family: 'Prata';
   font-weight: normal;
+}
+aside#prod-related #relproducts {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 95px 30px 0;
+}
+aside#prod-related #relproducts li {
+  width: calc(25% - 60px);
+  margin: 0 30px;
+}
+aside#prod-related #relproducts li img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
 }
